@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "build-n-test": "yarn build && yarn test",
+    "render": "node scratch/render-complete-function-list.js",
     "test": "mocha"
   },
   "repository": {
