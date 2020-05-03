@@ -1,6 +1,10 @@
 # vmix-function-list
 Complete list of available functions in vMix.
 
+[![package json version](https://img.shields.io/github/package-json/v/jensstigaard/vmix-function-list.svg)](https://www.github/jensstigaard/vmix-function-list)
+[![npm version](https://badge.fury.io/js/vmix-function-list.svg)](https://www.npmjs.com/package/vmix-function-list)
+
+
 ## Methods
 `.all()` - Returns a complete list of available functions in the vMix API.
 
