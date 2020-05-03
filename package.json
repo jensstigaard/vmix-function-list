@@ -1,0 +1,26 @@
+{
+  "name": "vmix-function-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build-n-test": "yarn build && yarn test",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensstigaard/vmix-function-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jensstigaard/vmix-function-list/issues"
+  },
+  "homepage": "https://github.com/jensstigaard/vmix-function-list#readme",
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "mocha": "^7.1.2",
+    "typescript": "^3.8.3"
+  }
+}
