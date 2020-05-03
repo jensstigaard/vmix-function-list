@@ -11,6 +11,31 @@ Complete list of available functions in vMix.
 See examples or tests for more info.
 
 
+# Installation and use
+
+## As a dependency using npm
+The repo is published at npmjs, meaning that you can easily add the utilities as a dependency in your frontend project.
+Found here: https://www.npmjs.com/package/vmix-function-list
+```sh
+npm install vmix-function-list --save # or 'yarn add vmix-function-list -d'
+```
+
+In your code the simplest way to import the modules is the following:
+
+```javascript
+const { XmlApiDataParser, XmlGeneralState } = require('vmix-function-list')
+
+// ...
+```
+
+You are also able to import all of the modules as a gathered variable, less elegant way:
+
+```javascript
+const vMixUtils = require('vmix-function-list')
+
+// ...
+```
+
 ### Examples
 - [All](./examples/all.js)
 - [Get category](./examples/category.js)
