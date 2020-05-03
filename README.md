@@ -17,3 +17,12 @@ See examples or tests for more info.
 - [Get single function](./examples/get.js)
 
 ---
+
+
+# Authors
+Jens Grønhøj Stigaard - <jens@stigaard.info> (http://jens.stigaard.info)
+
+
+# Contribution
+You are more than welcome to contribute to the repository!
+
