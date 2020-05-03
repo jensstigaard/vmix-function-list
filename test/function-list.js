@@ -2,9 +2,9 @@
 const assert = require('assert')
 
 // Import the modules
-const { FunctionList } = require('../dist/index')
+const vMixFunctionList = require('../dist/index')
 
-const functionList = new FunctionList()
+const functionList = new vMixFunctionList()
 
 describe('function-list', function () {
     it('should have a large number of functions in total', function () {

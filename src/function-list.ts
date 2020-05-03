@@ -5,13 +5,13 @@ import {
 	VmixFunctionDefinition,
 	VmixFunctionParameter,
 	VmixFunctionParameterType
-} from '../types/vmix-function-definition'
+} from './types/vmix-function-definition'
 import {
 	IntermediateVmixFunctionDefinition,
 	IntermediateVmixFunctionParameter
-} from '../types/intermediate/intermediate-vmix-function-definition'
+} from './types/intermediate/intermediate-vmix-function-definition'
 
-import functionsIntermediateList from '../functions/index'
+import functionsIntermediateList from './categories/index'
 
 const validParameterTypes: string[] = ['string', 'number', 'input', 'url']
 
