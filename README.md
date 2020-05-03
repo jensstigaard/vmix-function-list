@@ -10,4 +10,10 @@ Complete list of available functions in vMix.
 
 See examples or tests for more info.
 
+
+### Examples
+- [All](./examples/all.js)
+- [Get category](./examples/category.js)
+- [Get single function](./examples/get.js)
+
 ---
