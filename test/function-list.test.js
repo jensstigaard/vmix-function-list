@@ -2,7 +2,7 @@
 const assert = require('assert')
 
 // Import the modules
-const vMixFunctionList = require('../dist/index')
+const vMixFunctionList = require('../dist/index').default
 
 const functionList = new vMixFunctionList()
 
