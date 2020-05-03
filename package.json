@@ -1,12 +1,13 @@
 {
   "name": "vmix-function-list",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Complete function list for vMix. All available functions to call to the vMix API.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "build-n-test": "yarn build && yarn test",
+    "build-test": "yarn build && yarn test",
+    "prepublish": "rm -r ./dist/* && yarn build",
     "render": "node scratch/render-complete-function-list.js",
     "test": "mocha"
   },
