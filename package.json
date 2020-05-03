@@ -1,8 +1,9 @@
 {
   "name": "vmix-function-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "Complete function list for vMix. All available functions to call to the vMix API.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "build-n-test": "yarn build && yarn test",
@@ -14,19 +15,19 @@
     "url": "git+https://github.com/jensstigaard/vmix-function-list.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jensstigaard/vmix-function-list/issues"
   },
   "homepage": "https://github.com/jensstigaard/vmix-function-list#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.150",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.13.4",
     "mocha": "^7.1.2",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "lodash": "^4.17.15"
   }
 }
