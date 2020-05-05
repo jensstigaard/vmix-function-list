@@ -15,6 +15,10 @@ Complete list of available functions in vMix.
 See examples or tests for more info.
 
 
+## Rendered list
+Check out the directory rendered/ where you can find .json files of rendered complete list of function, either minified or in regular format. 
+
+
 # Installation and use
 
 ## As a dependency using npm
