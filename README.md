@@ -4,6 +4,7 @@ Complete list of available functions in vMix.
 [![package json version](https://img.shields.io/github/package-json/v/jensstigaard/vmix-function-list.svg)](https://www.github/jensstigaard/vmix-function-list)
 [![npm version](https://badge.fury.io/js/vmix-function-list.svg)](https://www.npmjs.com/package/vmix-function-list)
 
+The version of this repository follows the latest vMix version updated. When a new patch is released to vMix, it is checked whether new functions has been added to the vMix API, and this function list is updated accordingly.
 
 ## Methods
 `.all()` - Returns a complete list of available functions in the vMix API.
@@ -16,7 +17,7 @@ See examples or tests for more info.
 
 
 ## Rendered list
-Check out the directory rendered/ where you can find .json files of rendered complete list of function, either minified or in regular format. 
+In the `rendered/` directory you can find .json files of rendered complete list of function, either as minified or in regular format with indentation. 
 
 
 # Installation and use
@@ -31,15 +32,15 @@ npm install vmix-function-list --save # or 'yarn add vmix-function-list -d'
 In your code the simplest way to import the modules is the following:
 
 ```javascript
-const { XmlApiDataParser, XmlGeneralState } = require('vmix-function-list')
+const VmixFunctionList = require('vmix-function-list')
 
-// ...
+console.log('All functions', VmixFunctionList.all())
 ```
 
 You are also able to import all of the modules as a gathered variable, less elegant way:
 
 ```javascript
-const vMixUtils = require('vmix-function-list')
+const VmixFunctionList = require('vmix-function-list')
 
 // ...
 ```
