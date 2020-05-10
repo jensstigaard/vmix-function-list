@@ -58,5 +58,5 @@ Jens Grønhøj Stigaard - <jens@stigaard.info> (http://jens.stigaard.info)
 
 
 # Contribution
-You are more than welcome to contribute to the repository!
+You are more than welcome to contribute to the repository! If you find any inconsistencies or missing functions, you are welcome to tell about it in an Issue or make a Pull Request with the desired changes.
 
