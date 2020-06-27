@@ -64,6 +64,17 @@ export default {
 		}
 	},
 
+	AudioChannelMatrixApplyPreset: {
+		description: 'Apply preset to channel matrix',
+		parameters: {
+			Input: 'input',
+			Value: {
+				type: 'string',
+				description: 'Preset Name'
+			}
+		}
+	},
+
 	AudioMixerShowHide: {
 		description: 'Toggle show/hide of Audio Mixer panel',
 		parameters: {}
