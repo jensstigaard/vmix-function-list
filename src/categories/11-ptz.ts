@@ -126,7 +126,7 @@ export default {
 	},
 
 	PTZMoveToVirtualInputPositionByIndex: {
-		description: 'Moves to the Position of the PTZ Virtual Input associated with this Input.',
+		description: 'Moves to the Position of the PTZ Virtual Input associated with this Input',
 		parameters: {
 			Input: 'input',
 			Value: {

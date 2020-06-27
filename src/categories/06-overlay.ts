@@ -173,7 +173,7 @@ export default {
 	},
 
 	SetMultiViewOverlay: {
-		description: 'Change Overlay in Input MultiView according to Value parameter. Example: 1,2 changes Overlay1 to Input2',
+		description: 'Change Overlay in Input MultiView according to Value parameter. Example: 1,2 changes MultiviewOverlay1 to Input2',
 		parameters: {
 			Input: 'input',
 			Value: [ // Composite - separated by ","

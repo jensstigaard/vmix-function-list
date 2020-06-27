@@ -430,12 +430,12 @@ export default {
 	ReplayToggleSelectedEventCamera7: 'Replay: Toggle Camera angle 7 for Selected event',
 	ReplayToggleSelectedEventCamera8: 'Replay: Toggle Camera angle 8 for Selected event',
 
-	ReplayUpdateSelectedInPoint: 'Replay: Update In point of Selected Event to current Position.',
-	ReplayUpdateSelectedOutPoint: 'Replay: Update Mark Out point of Selected Event to current Position.',
+	ReplayUpdateSelectedInPoint: 'Replay: Update In point of Selected Event to current Position',
+	ReplayUpdateSelectedOutPoint: 'Replay: Update Mark Out point of Selected Event to current Position',
 
 	// New in vMix 24
 	ReplayUpdateSelectedSpeed: {
-		description: 'Replay: Update speed of Selected Event.',
+		description: 'Replay: Update speed of Selected Event',
 		parameters: {
 			Value: {
 				type: 'number',

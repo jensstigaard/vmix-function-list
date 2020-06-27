@@ -11,7 +11,7 @@ export default {
 	},
 
 	ScriptStartDynamic: {
-		description: 'Start a dynamic script using code specified as the Value.',
+		description: 'Start a dynamic script using code specified as the Value',
 		parameters: {
 			Value: {
 				type: 'string',

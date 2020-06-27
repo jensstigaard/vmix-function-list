@@ -73,7 +73,7 @@ export default {
 	},
 
 	ResumeRender: {
-		description: 'Resume render of Title input after making multiple updates.',
+		description: 'Resume render of Title input after making multiple updates',
 		parameters: {
 			Input: 'input'
 		},
@@ -102,7 +102,7 @@ export default {
 	},
 
 	SetImage: {
-		description: 'Change Image in Title according to Filename or empty to clear. SelectedIndex or SelectedValue can be used to select image.',
+		description: 'Change Image in Title according to Filename or empty to clear. SelectedIndex or SelectedValue can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -117,13 +117,13 @@ export default {
 
 			Value: {
 				type: 'string',
-				description: 'Can use both file:// and https:// addresses.'
+				description: 'Can use both file:// and https:// addresses'
 			},
 		},
 	},
 
 	SetImageVisible: {
-		description: 'Toggle Image Visibility in Title. SelectedIndex or SelectedValue can be used to select image.',
+		description: 'Toggle Image Visibility in Title. SelectedIndex or SelectedValue can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -139,7 +139,7 @@ export default {
 	},
 
 	SetImageVisibleOff: {
-		description: 'Hide Image in Title. SelectedIndex or SelectedValue can be used to select image.',
+		description: 'Hide Image in Title. SelectedIndex or SelectedValue can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -155,7 +155,7 @@ export default {
 	},
 
 	SetImageVisibleOn: {
-		description: 'Show Image in Title. SelectedIndex or SelectedValue can be used to select image.',
+		description: 'Show Image in Title. SelectedIndex or SelectedValue can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -171,7 +171,7 @@ export default {
 	},
 
 	SetText: {
-		description: 'Change Text in Title according to Value parameter. SelectedIndex or SelectName can be used to select image.',
+		description: 'Change Text in Title according to Value parameter. SelectedIndex or SelectName can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -193,7 +193,7 @@ export default {
 	},
 
 	SetTextColour: {
-		description: 'Change Colour of Text in Title in HTML format',
+		description: 'Change Colour of Text in Title in HTML format (#xxxxxx)',
 		parameters: {
 			Input: 'input',
 
@@ -263,7 +263,7 @@ export default {
 	},
 
 	SetTickerSpeed: {
-		description: 'Change Ticker Speed.',
+		description: 'Change Ticker Speed',
 		parameters: {
 			Input: 'input',
 
@@ -318,7 +318,7 @@ export default {
 	},
 
 	SuspendCountdown: {
-		description: 'Suspend Countdown - does not restart countdown on completion - stays 00.00.',
+		description: 'Suspend Countdown - does not restart countdown on completion - stays 00.00',
 		parameters: {
 			Input: 'input',
 

@@ -1,11 +1,11 @@
 export default {
 
 	LastPreset: {
-		description: 'Load the last preset.',
+		description: 'Load the last preset',
 	},
 
 	OpenPreset: {
-		description: 'Load preset from the specified Filename.',
+		description: 'Load preset from the specified Filename',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -15,7 +15,7 @@ export default {
 	},
 
 	SavePreset: {
-		description: 'Save preset to the specified Filename.',
+		description: 'Save preset to the specified Filename',
 		parameters: {
 			Value: {
 				type: 'string',

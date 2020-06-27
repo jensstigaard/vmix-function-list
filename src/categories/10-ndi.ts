@@ -1,7 +1,7 @@
 export default {
 
 	NDICommand: {
-		description: 'Send specified command to NDI source.',
+		description: 'Send specified command to NDI source',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -12,7 +12,7 @@ export default {
 	},
 
 	NDISelectSourceByIndex: {
-		description: 'Select NDI source by Index.',
+		description: 'Select NDI source by Index',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -23,7 +23,7 @@ export default {
 	},
 
 	NDISelectSourceByName: {
-		description: 'Select NDI source by Name.',
+		description: 'Select NDI source by Name',
 		parameters: {
 			Input: 'input',
 			Value: {

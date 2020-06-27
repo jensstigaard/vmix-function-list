@@ -146,7 +146,7 @@ export default {
 	},
 
 	SetVolumeChannel1: {
-		description: 'Set volume on channel 1 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently.',
+		description: 'Set volume on channel 1 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -157,7 +157,7 @@ export default {
 	},
 
 	SetVolumeChannel2: {
-		description: 'Set volume on channel 2 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently.',
+		description: 'Set volume on channel 2 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -184,7 +184,7 @@ export default {
 	},
 
 	SetVolumeFade: {
-		description: 'Set volume gradually over x milliseconds.',
+		description: 'Set volume gradually over x milliseconds',
 		parameters: {
 			Input: 'input',
 			Value: [ // Composite - separated by ","

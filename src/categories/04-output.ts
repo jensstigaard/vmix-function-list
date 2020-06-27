@@ -7,7 +7,7 @@ export default {
 	FullscreenOn: 'Switch on fullscreen',
 
 	SetOutput2: {
-		description: 'Change what is displayed on Output 2.',
+		description: 'Change what is displayed on Output 2',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -21,7 +21,7 @@ export default {
 		}
 	},
 	SetOutput3: {
-		description: 'Change what is displayed on Output 3.',
+		description: 'Change what is displayed on Output 3',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -34,7 +34,7 @@ export default {
 		}
 	},
 	SetOutput4: {
-		description: 'Change what is displayed on Output 4.',
+		description: 'Change what is displayed on Output 4',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -47,7 +47,7 @@ export default {
 		}
 	},
 	SetOutputFullscreen: {
-		description: 'Change what is displayed on the Fullscreen output.',
+		description: 'Change what is displayed on the Fullscreen output',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -60,7 +60,7 @@ export default {
 		}
 	},
 	SetOutputFullscreen2: {
-		description: 'Change what is displayed on the Fullscreen2 output.',
+		description: 'Change what is displayed on the Fullscreen2 output',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -107,23 +107,23 @@ export default {
 	StartStopRecording: 'Toggle start/stop recording',
 
 	StartStopStreaming: {
-		description: 'Toggle start/stop streaming (of one specific or all configured streams).',
+		description: 'Toggle start/stop streaming (of one specific or all configured streams)',
 		parameters: {
 			Value: {
 				type: 'number',
 				optional: true,
-				description: 'Optional stream number starting from 0. Leave blank to control all streams.'
+				description: 'Optional stream number starting from 0. Leave blank to control all streams'
 			}
 		}
 	},
 
 	StartStreaming: {
-		description: 'Start streaming (of one specific or all configured streams).',
+		description: 'Start streaming (of one specific or all configured streams)',
 		parameters: {
 			Value: {
 				type: 'number',
 				optional: true,
-				description: 'Optional stream number starting from 0. Leave blank to control all streams.'
+				description: 'Optional stream number starting from 0. Leave blank to control all streams'
 			}
 		}
 	},
@@ -133,28 +133,28 @@ export default {
 	StopRecording: 'Stop recording',
 
 	StopStreaming: {
-		description: 'Stop streaming (of one specific or all configured streams).',
+		description: 'Stop streaming (of one specific or all configured streams)',
 		parameters: {
 			Value: {
 				type: 'number',
 				optional: true,
-				description: 'Optional stream number starting from 0. Leave blank to control all streams.'
+				description: 'Optional stream number starting from 0. Leave blank to control all streams'
 			}
 		}
 	},
 
 	StreamingSetKey: {
-		description: 'Set Key on Custom RTMP Stream.',
+		description: 'Set Key on Custom RTMP Stream',
 		parameters: {
 			Value: {
 				type: 'string',
-				description: 'Optional stream number starting from 0 at start followed by comma, e.g. 0,mystreamkey.'
+				description: 'Optional stream number starting from 0 at start followed by comma, e.g. 0,mystreamkey'
 			}
 		}
 	},
 
 	StreamingSetPassword: {
-		description: 'Set Password on Custom RTMP Stream.',
+		description: 'Set Password on Custom RTMP Stream',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -164,7 +164,7 @@ export default {
 	},
 
 	StreamingSetURL: {
-		description: 'Set URL on Custom RTMP Stream.',
+		description: 'Set URL on Custom RTMP Stream',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -174,7 +174,7 @@ export default {
 	},
 
 	StreamingSetUsername: {
-		description: 'Set Username on Custom RTMP Stream.',
+		description: 'Set Username on Custom RTMP Stream',
 		parameters: {
 			Value: {
 				type: 'string',
@@ -184,7 +184,7 @@ export default {
 	},
 
 	WriteDurationToRecordingLog: {
-		description: 'Write current recording duration to log file with optional tag text Value.',
+		description: 'Write current recording duration to log file with optional tag text Value',
 		parameters: {
 			Value: {
 				type: 'string',
