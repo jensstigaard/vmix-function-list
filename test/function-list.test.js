@@ -6,10 +6,12 @@ const vMixFunctionList = require('../dist/index').default
 
 const functionList = new vMixFunctionList()
 
+const TOTAL_NUMBER_OF_FUNCTIONS = 465
+
 describe('function-list', function () {
     it('should have a large number of functions in total', function () {
         const allFunctions = functionList.all()
-        assert.equal(allFunctions.length, 456, 'Did not see expected number of functions')
+        assert.equal(allFunctions.length, TOTAL_NUMBER_OF_FUNCTIONS, 'Did not see expected number of functions')
     })
 
     it('should have a function called Cut', function () {
