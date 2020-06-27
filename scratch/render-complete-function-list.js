@@ -7,20 +7,26 @@ const list = new FunctionList()
 
 const dir = path.resolve(__dirname, '../rendered')
 
-const destinationFull = path.resolve(dir, 'list.json')
-const destinationMin = path.resolve(dir, 'list.min.json')
+const destPathPrettyList = path.resolve(dir, 'list.json')
+const destPathMinifiedList = path.resolve(dir, 'list.min.json')
+const destPathCountNumOfFunctions = path.resolve(dir, 'count.json')
 
 const funcs = list.all()
 
-console.log('The complete list of functions in the vMix API were saved to:')
+console.log(`The complete list of (${funcs.length}) functions in the vMix API were saved to:`)
+
 // Save nicely formatted JSON to file
 // https://gist.github.com/collingo/6700069
-fs.writeFileSync(destinationFull, JSON.stringify(funcs, null, 2))
-console.log('(pretty)\t', destinationFull)
+fs.writeFileSync(destPathPrettyList, JSON.stringify(funcs, null, 2))
+console.log('(list pretty)', '\t\t\t', destPathPrettyList)
 
 // Minimised version JSON to file
-fs.writeFileSync(destinationMin, JSON.stringify(funcs))
-console.log('(minified)\t', destinationMin)
+fs.writeFileSync(destPathMinifiedList, JSON.stringify(funcs))
+console.log('(list minified)', '\t\t', destPathMinifiedList)
+
+// Minimised version JSON to file
+fs.writeFileSync(destPathCountNumOfFunctions, funcs.length)
+console.log('(count number of functions)\t', destPathCountNumOfFunctions)
 
 console.log()
 
