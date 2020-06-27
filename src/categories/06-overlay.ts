@@ -179,7 +179,7 @@ export default {
 			Value: [ // Composite - separated by ","
 				{
 					type: 'number',
-					description: 'Overlay number (1 to 4)'
+					description: 'Overlay number (1 to 10)'
 				},
 				{
 					type: 'string',
