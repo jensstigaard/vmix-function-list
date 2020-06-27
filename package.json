@@ -1,6 +1,6 @@
 {
   "name": "vmix-function-list",
-  "version": "24.0.0.28",
+  "version": "1.24.28",
   "description": "Complete function list for vMix. All available functions to call to the vMix API.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
