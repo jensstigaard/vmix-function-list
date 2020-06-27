@@ -30,21 +30,19 @@ Found here: https://www.npmjs.com/package/vmix-function-list
 npm install vmix-function-list --save # or 'yarn add vmix-function-list -d'
 ```
 
-In your code the simplest way to import the modules is the following:
+In your code the simplest way to import the module is the following:
 
 ```javascript
 const VmixFunctionList = require('vmix-function-list')
 
+// List of all functions
 console.log('All functions', VmixFunctionList.all())
+
+// Get specific function (case-insensitive)
+console.log('Get specific function: Cut', VmixFunctionList.get('cut'))
+console.log('Get specific function: SetText', VmixFunctionList.get('SetText'))
 ```
 
-You are also able to import all of the modules as a gathered variable, less elegant way:
-
-```javascript
-const VmixFunctionList = require('vmix-function-list')
-
-// ...
-```
 
 ### Examples
 - [All](./examples/all.js)
