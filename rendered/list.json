@@ -248,14 +248,14 @@
   {
     "category": "Preset",
     "function": "LastPreset",
-    "description": "Load the last preset.",
+    "description": "Load the last preset",
     "parameters": {},
     "examples": []
   },
   {
     "category": "Preset",
     "function": "OpenPreset",
-    "description": "Load preset from the specified Filename.",
+    "description": "Load preset from the specified Filename",
     "parameters": {
       "Value": {
         "type": "string",
@@ -268,7 +268,7 @@
   {
     "category": "Preset",
     "function": "SavePreset",
-    "description": "Save preset to the specified Filename.",
+    "description": "Save preset to the specified Filename",
     "parameters": {
       "Value": {
         "type": "string",
@@ -498,7 +498,7 @@
   {
     "category": "PTZ",
     "function": "PTZMoveToVirtualInputPositionByIndex",
-    "description": "Moves to the Position of the PTZ Virtual Input associated with this Input.",
+    "description": "Moves to the Position of the PTZ Virtual Input associated with this Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -632,7 +632,7 @@
   {
     "category": "NDI",
     "function": "NDICommand",
-    "description": "Send specified command to NDI source.",
+    "description": "Send specified command to NDI source",
     "parameters": {
       "Input": {
         "type": "input",
@@ -650,7 +650,7 @@
   {
     "category": "NDI",
     "function": "NDISelectSourceByIndex",
-    "description": "Select NDI source by Index.",
+    "description": "Select NDI source by Index",
     "parameters": {
       "Input": {
         "type": "input",
@@ -668,7 +668,7 @@
   {
     "category": "NDI",
     "function": "NDISelectSourceByName",
-    "description": "Select NDI source by Name.",
+    "description": "Select NDI source by Name",
     "parameters": {
       "Input": {
         "type": "input",
@@ -1736,21 +1736,21 @@
   {
     "category": "Replay",
     "function": "ReplayUpdateSelectedInPoint",
-    "description": "Replay: Update In point of Selected Event to current Position.",
+    "description": "Replay: Update In point of Selected Event to current Position",
     "parameters": {},
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayUpdateSelectedOutPoint",
-    "description": "Replay: Update Mark Out point of Selected Event to current Position.",
+    "description": "Replay: Update Mark Out point of Selected Event to current Position",
     "parameters": {},
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayUpdateSelectedSpeed",
-    "description": "Replay: Update speed of Selected Event.",
+    "description": "Replay: Update speed of Selected Event",
     "parameters": {
       "Value": {
         "type": "number",
@@ -1776,7 +1776,7 @@
   {
     "category": "Scripting",
     "function": "ScriptStartDynamic",
-    "description": "Start a dynamic script using code specified as the Value.",
+    "description": "Start a dynamic script using code specified as the Value",
     "parameters": {
       "Value": {
         "type": "string",
@@ -2185,7 +2185,7 @@
   {
     "category": "Overlay",
     "function": "SetMultiViewOverlay",
-    "description": "Change Overlay in Input MultiView according to Value parameter. Example: 1,2 changes Overlay1 to Input2",
+    "description": "Change Overlay in Input MultiView according to Value parameter. Example: 1,2 changes MultiviewOverlay1 to Input2",
     "parameters": {
       "Input": {
         "type": "input",
@@ -2403,7 +2403,7 @@
   {
     "category": "Input",
     "function": "ColourCorrectionAuto",
-    "description": "Perform Basic Auto Colour Correction for Input.",
+    "description": "Perform Basic Auto Colour Correction for Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -2416,7 +2416,7 @@
   {
     "category": "Input",
     "function": "ColourCorrectionReset",
-    "description": "Reset Colour Correction for Input.",
+    "description": "Reset Colour Correction for Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -2429,7 +2429,7 @@
   {
     "category": "Input",
     "function": "DeinterlaceOff",
-    "description": "Switch off deinterlacing for Input.",
+    "description": "Switch off deinterlacing for Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -2442,7 +2442,7 @@
   {
     "category": "Input",
     "function": "DeinterlaceOn",
-    "description": "Switch on deinterlacing for Input.",
+    "description": "Switch on deinterlacing for Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -2566,7 +2566,7 @@
   {
     "category": "Input",
     "function": "ListExport",
-    "description": "Export List as M3U",
+    "description": "Export List as M3U file",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3017,7 +3017,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Alpha between 0 and 255. 0 is transparent. 255 is opaque.",
+        "description": "Alpha between 0 and 255. 0 is transparent. 255 is opaque",
         "optional": false
       }
     },
@@ -3026,7 +3026,7 @@
   {
     "category": "Input",
     "function": "SetCCGainB",
-    "description": "Change Gain B level of Input.",
+    "description": "Change Gain B level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3035,7 +3035,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between 0 and 2. 1 is original value.",
+        "description": "Value between 0 and 2. 1 is original value",
         "optional": false
       }
     },
@@ -3044,7 +3044,7 @@
   {
     "category": "Input",
     "function": "SetCCGainG",
-    "description": "Change Gain G level of Input.",
+    "description": "Change Gain G level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3053,7 +3053,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between 0 and 2. 1 is original value.",
+        "description": "Value between 0 and 2. 1 is original value",
         "optional": false
       }
     },
@@ -3062,7 +3062,7 @@
   {
     "category": "Input",
     "function": "SetCCGainR",
-    "description": "Change Gain R level of Input.",
+    "description": "Change Gain R level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3071,7 +3071,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between 0 and 2. 1 is original value.",
+        "description": "Value between 0 and 2. 1 is original value",
         "optional": false
       }
     },
@@ -3080,7 +3080,7 @@
   {
     "category": "Input",
     "function": "SetCCGainRGB",
-    "description": "Change Gain RGB level of Input.",
+    "description": "Change Gain RGB level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3089,7 +3089,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between 0 and 2. 1 is original value.",
+        "description": "Value between 0 and 2. 1 is original value",
         "optional": false
       }
     },
@@ -3098,7 +3098,7 @@
   {
     "category": "Input",
     "function": "SetCCGammaB",
-    "description": "Change Gamma B level of Input.",
+    "description": "Change Gamma B level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3107,7 +3107,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3116,7 +3116,7 @@
   {
     "category": "Input",
     "function": "SetCCGammaG",
-    "description": "Change Gamma G level of Input.",
+    "description": "Change Gamma G level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3125,7 +3125,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3134,7 +3134,7 @@
   {
     "category": "Input",
     "function": "SetCCGammaR",
-    "description": "Change Gamma R level of Input.",
+    "description": "Change Gamma R level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3143,7 +3143,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3152,7 +3152,7 @@
   {
     "category": "Input",
     "function": "SetCCGammaRGB",
-    "description": "Change Gamma RGB level of Input.",
+    "description": "Change Gamma RGB level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3161,7 +3161,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3170,7 +3170,7 @@
   {
     "category": "Input",
     "function": "SetCCHue",
-    "description": "Change Hue level of Input.",
+    "description": "Change Hue level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3179,7 +3179,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3188,7 +3188,7 @@
   {
     "category": "Input",
     "function": "SetCCLiftB",
-    "description": "Change Lift B level of Input.",
+    "description": "Change Lift B level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3197,7 +3197,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3206,7 +3206,7 @@
   {
     "category": "Input",
     "function": "SetCCLiftG",
-    "description": "Change Lift G level of Input.",
+    "description": "Change Lift G level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3215,7 +3215,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3224,7 +3224,7 @@
   {
     "category": "Input",
     "function": "SetCCLiftR",
-    "description": "Change Lift R level of Input.",
+    "description": "Change Lift R level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3233,7 +3233,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3242,7 +3242,7 @@
   {
     "category": "Input",
     "function": "SetCCLiftRGB",
-    "description": "Change Lift RGB level of Input.",
+    "description": "Change Lift RGB level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3251,7 +3251,7 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value.",
+        "description": "Value between -1 and 1. 0 is original value",
         "optional": false
       }
     },
@@ -3260,7 +3260,7 @@
   {
     "category": "Input",
     "function": "SetCCSaturation",
-    "description": "Change Saturation level of Input.",
+    "description": "Change Saturation level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3269,7 +3269,59 @@
       },
       "Value": {
         "type": "number",
-        "description": "Value between -1 and 1. 0 is original value. -1 is greyscale. 1 is very saturated.",
+        "description": "Value between -1 and 1. 0 is original value. -1 is greyscale. 1 is very saturated",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetDynamicInput1",
+    "description": "Set Dynamic Input 1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetDynamicInput2",
+    "description": "Set Dynamic Input 2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetDynamicInput3",
+    "description": "Set Dynamic Input 3",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetDynamicInput4",
+    "description": "Set Dynamic Input 4",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
         "optional": false
       }
     },
@@ -3289,6 +3341,33 @@
         "type": "string",
         "description": "New display name",
         "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer",
+    "description": "Change Layer in Input according to Value parameter. Example: 1,2 changes Layer1 to Input2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "composites": [
+          {
+            "type": "number",
+            "description": "Overlay number (1 to 4)",
+            "optional": false
+          },
+          {
+            "type": "string",
+            "description": "Input to set as layer",
+            "optional": false
+          }
+        ]
       }
     },
     "examples": []
@@ -3332,7 +3411,7 @@
   {
     "category": "Input",
     "function": "SetPictureEffect",
-    "description": "Set transition effect for Photos and PowerPoint Inputs.",
+    "description": "Set transition effect for Photos and PowerPoint Inputs",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3350,7 +3429,7 @@
   {
     "category": "Input",
     "function": "SetPictureEffectDuration",
-    "description": "Set duration of transition effect for Photos and PowerPoint Inputs.",
+    "description": "Set duration of transition effect for Photos and PowerPoint Inputs",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3368,7 +3447,7 @@
   {
     "category": "Input",
     "function": "SetPictureTransition",
-    "description": "Set transition time between Photos and PowerPoint slides.",
+    "description": "Set transition time between Photos and PowerPoint slides",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3440,7 +3519,7 @@
   {
     "category": "Input",
     "function": "SetZoom",
-    "description": "Change current Zoom level of Input.",
+    "description": "Change current Zoom level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3458,7 +3537,7 @@
   {
     "category": "Input",
     "function": "SharpenOff",
-    "description": "Switch off sharpen for Input.",
+    "description": "Switch off sharpen for Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3471,7 +3550,7 @@
   {
     "category": "Input",
     "function": "SharpenOn",
-    "description": "Switch on sharpen for Input.",
+    "description": "Switch on sharpen for Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3484,7 +3563,7 @@
   {
     "category": "Input",
     "function": "VideoCallAudioSource",
-    "description": "Select audio source to route to Video Call (to let the caller receive the selected audio). Including mix-minus.",
+    "description": "Select audio source to route to Video Call (to let the caller receive the selected audio). Including mix-minus",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3502,7 +3581,7 @@
   {
     "category": "Input",
     "function": "VideoCallVideoSource",
-    "description": "Select video source to route to Video Call (to let the caller receive the selected video).",
+    "description": "Select video source to route to Video Call (to let the caller receive the selected video)",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3574,7 +3653,7 @@
   {
     "category": "Input",
     "function": "WaitForCompletion",
-    "description": "Wait for a Video Input to reach the end of playback.",
+    "description": "Wait for a Video Input to reach the end of playback",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3695,7 +3774,7 @@
   {
     "category": "Title",
     "function": "ResumeRender",
-    "description": "Resume render of Title input after making multiple updates.",
+    "description": "Resume render of Title input after making multiple updates",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3744,7 +3823,7 @@
   {
     "category": "Title",
     "function": "SetImage",
-    "description": "Change Image in Title according to Filename or empty to clear. SelectedIndex or SelectedValue can be used to select image.",
+    "description": "Change Image in Title according to Filename or empty to clear. SelectedIndex or SelectedValue can be used to select image",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3763,7 +3842,7 @@
       },
       "Value": {
         "type": "string",
-        "description": "Can use both file:// and https:// addresses.",
+        "description": "Can use both file:// and https:// addresses",
         "optional": false
       }
     },
@@ -3772,7 +3851,7 @@
   {
     "category": "Title",
     "function": "SetImageVisible",
-    "description": "Toggle Image Visibility in Title. SelectedIndex or SelectedValue can be used to select image.",
+    "description": "Toggle Image Visibility in Title. SelectedIndex or SelectedValue can be used to select image",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3795,7 +3874,7 @@
   {
     "category": "Title",
     "function": "SetImageVisibleOff",
-    "description": "Hide Image in Title. SelectedIndex or SelectedValue can be used to select image.",
+    "description": "Hide Image in Title. SelectedIndex or SelectedValue can be used to select image",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3818,7 +3897,7 @@
   {
     "category": "Title",
     "function": "SetImageVisibleOn",
-    "description": "Show Image in Title. SelectedIndex or SelectedValue can be used to select image.",
+    "description": "Show Image in Title. SelectedIndex or SelectedValue can be used to select image",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3841,7 +3920,7 @@
   {
     "category": "Title",
     "function": "SetText",
-    "description": "Change Text in Title according to Value parameter. SelectedIndex or SelectName can be used to select image.",
+    "description": "Change Text in Title according to Value parameter. SelectedIndex or SelectName can be used to select image",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3869,7 +3948,7 @@
   {
     "category": "Title",
     "function": "SetTextColour",
-    "description": "Change Colour of Text in Title in HTML format",
+    "description": "Change Colour of Text in Title in HTML format (#xxxxxx)",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3966,7 +4045,7 @@
   {
     "category": "Title",
     "function": "SetTickerSpeed",
-    "description": "Change Ticker Speed.",
+    "description": "Change Ticker Speed",
     "parameters": {
       "Input": {
         "type": "input",
@@ -4020,7 +4099,7 @@
   {
     "category": "Title",
     "function": "SuspendCountdown",
-    "description": "Suspend Countdown - does not restart countdown on completion - stays 00.00.",
+    "description": "Suspend Countdown - does not restart countdown on completion - stays 00.00",
     "parameters": {
       "Input": {
         "type": "input",
@@ -4072,7 +4151,7 @@
   {
     "category": "Output",
     "function": "SetOutput2",
-    "description": "Change what is displayed on Output 2.",
+    "description": "Change what is displayed on Output 2",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4090,7 +4169,7 @@
   {
     "category": "Output",
     "function": "SetOutput3",
-    "description": "Change what is displayed on Output 3.",
+    "description": "Change what is displayed on Output 3",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4108,7 +4187,7 @@
   {
     "category": "Output",
     "function": "SetOutput4",
-    "description": "Change what is displayed on Output 4.",
+    "description": "Change what is displayed on Output 4",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4126,7 +4205,7 @@
   {
     "category": "Output",
     "function": "SetOutputFullscreen",
-    "description": "Change what is displayed on the Fullscreen output.",
+    "description": "Change what is displayed on the Fullscreen output",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4144,7 +4223,7 @@
   {
     "category": "Output",
     "function": "SetOutputFullscreen2",
-    "description": "Change what is displayed on the Fullscreen2 output.",
+    "description": "Change what is displayed on the Fullscreen2 output",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4235,11 +4314,11 @@
   {
     "category": "Output",
     "function": "StartStopStreaming",
-    "description": "Toggle start/stop streaming (of one specific or all configured streams).",
+    "description": "Toggle start/stop streaming (of one specific or all configured streams)",
     "parameters": {
       "Value": {
         "type": "number",
-        "description": "Optional stream number starting from 0. Leave blank to control all streams.",
+        "description": "Optional stream number starting from 0. Leave blank to control all streams",
         "optional": true
       }
     },
@@ -4248,11 +4327,11 @@
   {
     "category": "Output",
     "function": "StartStreaming",
-    "description": "Start streaming (of one specific or all configured streams).",
+    "description": "Start streaming (of one specific or all configured streams)",
     "parameters": {
       "Value": {
         "type": "number",
-        "description": "Optional stream number starting from 0. Leave blank to control all streams.",
+        "description": "Optional stream number starting from 0. Leave blank to control all streams",
         "optional": true
       }
     },
@@ -4282,11 +4361,11 @@
   {
     "category": "Output",
     "function": "StopStreaming",
-    "description": "Stop streaming (of one specific or all configured streams).",
+    "description": "Stop streaming (of one specific or all configured streams)",
     "parameters": {
       "Value": {
         "type": "number",
-        "description": "Optional stream number starting from 0. Leave blank to control all streams.",
+        "description": "Optional stream number starting from 0. Leave blank to control all streams",
         "optional": true
       }
     },
@@ -4295,11 +4374,11 @@
   {
     "category": "Output",
     "function": "StreamingSetKey",
-    "description": "Set Key on Custom RTMP Stream.",
+    "description": "Set Key on Custom RTMP Stream",
     "parameters": {
       "Value": {
         "type": "string",
-        "description": "Optional stream number starting from 0 at start followed by comma, e.g. 0,mystreamkey.",
+        "description": "Optional stream number starting from 0 at start followed by comma, e.g. 0,mystreamkey",
         "optional": false
       }
     },
@@ -4308,7 +4387,7 @@
   {
     "category": "Output",
     "function": "StreamingSetPassword",
-    "description": "Set Password on Custom RTMP Stream.",
+    "description": "Set Password on Custom RTMP Stream",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4321,7 +4400,7 @@
   {
     "category": "Output",
     "function": "StreamingSetURL",
-    "description": "Set URL on Custom RTMP Stream.",
+    "description": "Set URL on Custom RTMP Stream",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4334,7 +4413,7 @@
   {
     "category": "Output",
     "function": "StreamingSetUsername",
-    "description": "Set Username on Custom RTMP Stream.",
+    "description": "Set Username on Custom RTMP Stream",
     "parameters": {
       "Value": {
         "type": "string",
@@ -4347,7 +4426,7 @@
   {
     "category": "Output",
     "function": "WriteDurationToRecordingLog",
-    "description": "Write current recording duration to log file with optional tag text Value.",
+    "description": "Write current recording duration to log file with optional tag text Value",
     "parameters": {
       "Value": {
         "type": "string",
@@ -5757,7 +5836,7 @@
   {
     "category": "Audio",
     "function": "SetVolumeChannel1",
-    "description": "Set volume on channel 1 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently.",
+    "description": "Set volume on channel 1 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently",
     "parameters": {
       "Input": {
         "type": "input",
@@ -5775,7 +5854,7 @@
   {
     "category": "Audio",
     "function": "SetVolumeChannel2",
-    "description": "Set volume on channel 2 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently.",
+    "description": "Set volume on channel 2 for Input. When using SeparateMono on an Audio Input, this can be used to set channel volumes independently",
     "parameters": {
       "Input": {
         "type": "input",
@@ -5820,7 +5899,7 @@
   {
     "category": "Audio",
     "function": "SetVolumeFade",
-    "description": "Set volume gradually over x milliseconds.",
+    "description": "Set volume gradually over x milliseconds",
     "parameters": {
       "Input": {
         "type": "input",
@@ -5900,7 +5979,7 @@
   {
     "category": "General",
     "function": "KeyPress",
-    "description": "Force key press. To activate shortcuts.",
+    "description": "Force key press. To activate shortcuts",
     "parameters": {
       "Value": {
         "type": "string",
@@ -5914,6 +5993,58 @@
     "category": "General",
     "function": "SendKeys",
     "description": "Send keys to active window",
+    "parameters": {
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "General",
+    "function": "SetDynamicValue1",
+    "description": "Set Dynamic Value to use when specifying DynamicInput1 as a shortcut value",
+    "parameters": {
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "General",
+    "function": "SetDynamicValue2",
+    "description": "Set Dynamic Value to use when specifying DynamicInput2 as a shortcut value",
+    "parameters": {
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "General",
+    "function": "SetDynamicValue3",
+    "description": "Set Dynamic Value to use when specifying DynamicInput3 as a shortcut value",
+    "parameters": {
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "General",
+    "function": "SetDynamicValue4",
+    "description": "Set Dynamic Value to use when specifying DynamicInput4 as a shortcut value",
     "parameters": {
       "Value": {
         "type": "string",
