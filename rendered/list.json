@@ -198,6 +198,45 @@
   },
   {
     "category": "DataSources",
+    "function": "DataSourcePause",
+    "description": "Pause data source",
+    "parameters": {
+      "Value": {
+        "type": "string",
+        "description": "Data source name",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "DataSources",
+    "function": "DataSourcePlay",
+    "description": "Play data source",
+    "parameters": {
+      "Value": {
+        "type": "string",
+        "description": "Data source name",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "DataSources",
+    "function": "DataSourcePlayPause",
+    "description": "Play data source",
+    "parameters": {
+      "Value": {
+        "type": "string",
+        "description": "Data source name",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "DataSources",
     "function": "DataSourcePreviousRow",
     "description": "Select previous row of data source",
     "parameters": {
@@ -2196,7 +2235,7 @@
         "composites": [
           {
             "type": "number",
-            "description": "Overlay number (1 to 4)",
+            "description": "Overlay number (1 to 10)",
             "optional": false
           },
           {
@@ -2801,6 +2840,33 @@
   },
   {
     "category": "Input",
+    "function": "MoveLayer",
+    "description": "Move Layer in Input according to Value parameter",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "composites": [
+          {
+            "type": "number",
+            "description": "FromIndex (starting at 1)",
+            "optional": false
+          },
+          {
+            "type": "number",
+            "description": "ToIndex (starting at 1)",
+            "optional": false
+          }
+        ]
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
     "function": "NextItem",
     "description": "Move to next item in List",
     "parameters": {
@@ -3359,7 +3425,7 @@
         "composites": [
           {
             "type": "number",
-            "description": "Overlay number (1 to 4)",
+            "description": "Layer number (1 to 10)",
             "optional": false
           },
           {
@@ -5092,6 +5158,24 @@
       "Value": {
         "type": "string",
         "description": "Busses to switch on. Valid bus names M,A,B,C,D,E,F,G - Value can be mixed, e.g. MAB - to toggle MAB busses",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "AudioChannelMatrixApplyPreset",
+    "description": "Apply preset to channel matrix",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "Preset Name",
         "optional": false
       }
     },
