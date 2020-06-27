@@ -64,6 +64,40 @@ export default {
 		}
 	},
 
+
+	DataSourcePause: {
+		description: 'Pause data source',
+		parameters: {
+			Value: {
+				type: 'string',
+				description: 'Data source name',
+				examples: 'Excel/CSV'
+			}
+		}
+	},
+
+	DataSourcePlay: {
+		description: 'Play data source',
+		parameters: {
+			Value: {
+				type: 'string',
+				description: 'Data source name',
+				examples: 'Excel/CSV'
+			}
+		}
+	},
+
+	DataSourcePlayPause: {
+		description: 'Play data source',
+		parameters: {
+			Value: {
+				type: 'string',
+				description: 'Data source name',
+				examples: 'Excel/CSV'
+			}
+		}
+	},
+
 	DataSourcePreviousRow: {
 		description: 'Select previous row of data source',
 		parameters: {
