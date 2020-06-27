@@ -120,28 +120,28 @@ export default {
 	},
 
 	ColourCorrectionAuto: {
-		description: 'Perform Basic Auto Colour Correction for Input.',
+		description: 'Perform Basic Auto Colour Correction for Input',
 		parameters: {
 			Input: 'input'
 		}
 	},
 
 	ColourCorrectionReset: {
-		description: 'Reset Colour Correction for Input.',
+		description: 'Reset Colour Correction for Input',
 		parameters: {
 			Input: 'input'
 		}
 	},
 
 	DeinterlaceOff: {
-		description: 'Switch off deinterlacing for Input.',
+		description: 'Switch off deinterlacing for Input',
 		parameters: {
 			Input: 'input'
 		}
 	},
 
 	DeinterlaceOn: {
-		description: 'Switch on deinterlacing for Input.',
+		description: 'Switch on deinterlacing for Input',
 		parameters: {
 			Input: 'input'
 		}
@@ -223,7 +223,7 @@ export default {
 	},
 
 	ListExport: {
-		description: 'Export List as M3U',
+		description: 'Export List as M3U file',
 		parameters: {
 			Input: {
 				type: 'input',
@@ -478,162 +478,190 @@ export default {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Alpha between 0 and 255. 0 is transparent. 255 is opaque.'
+				description: 'Alpha between 0 and 255. 0 is transparent. 255 is opaque'
 			}
 		}
 	},
 
 	SetCCGainB: {
-		description: 'Change Gain B level of Input.',
+		description: 'Change Gain B level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between 0 and 2. 1 is original value.'
+				description: 'Value between 0 and 2. 1 is original value'
 			}
 		}
 	},
 
 	SetCCGainG: {
-		description: 'Change Gain G level of Input.',
+		description: 'Change Gain G level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between 0 and 2. 1 is original value.'
+				description: 'Value between 0 and 2. 1 is original value'
 			}
 		}
 	},
 
 	SetCCGainR: {
-		description: 'Change Gain R level of Input.',
+		description: 'Change Gain R level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between 0 and 2. 1 is original value.'
+				description: 'Value between 0 and 2. 1 is original value'
 			}
 		}
 	},
 
 	SetCCGainRGB: {
-		description: 'Change Gain RGB level of Input.',
+		description: 'Change Gain RGB level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between 0 and 2. 1 is original value.'
+				description: 'Value between 0 and 2. 1 is original value'
 			}
 		}
 	},
 
 	SetCCGammaB: {
-		description: 'Change Gamma B level of Input.',
+		description: 'Change Gamma B level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCGammaG: {
-		description: 'Change Gamma G level of Input.',
+		description: 'Change Gamma G level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCGammaR: {
-		description: 'Change Gamma R level of Input.',
+		description: 'Change Gamma R level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCGammaRGB: {
-		description: 'Change Gamma RGB level of Input.',
+		description: 'Change Gamma RGB level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCHue: {
-		description: 'Change Hue level of Input.',
+		description: 'Change Hue level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCLiftB: {
-		description: 'Change Lift B level of Input.',
+		description: 'Change Lift B level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCLiftG: {
-		description: 'Change Lift G level of Input.',
+		description: 'Change Lift G level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCLiftR: {
-		description: 'Change Lift R level of Input.',
+		description: 'Change Lift R level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCLiftRGB: {
-		description: 'Change Lift RGB level of Input.',
+		description: 'Change Lift RGB level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value.'
+				description: 'Value between -1 and 1. 0 is original value'
 			}
 		}
 	},
 
 	SetCCSaturation: {
-		description: 'Change Saturation level of Input.',
+		description: 'Change Saturation level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
 				type: 'number',
-				description: 'Value between -1 and 1. 0 is original value. -1 is greyscale. 1 is very saturated.'
+				description: 'Value between -1 and 1. 0 is original value. -1 is greyscale. 1 is very saturated'
 			}
+		}
+	},
+
+	SetDynamicInput1: {
+		description: 'Set Dynamic Input 1',
+		parameters: {
+			Input: 'input'
+		}
+	},
+
+	SetDynamicInput2: {
+		description: 'Set Dynamic Input 2',
+		parameters: {
+			Input: 'input'
+		}
+	},
+
+	SetDynamicInput3: {
+		description: 'Set Dynamic Input 3',
+		parameters: {
+			Input: 'input'
+		}
+	},
+
+	SetDynamicInput4: {
+		description: 'Set Dynamic Input 4',
+		parameters: {
+			Input: 'input'
 		}
 	},
 
@@ -645,6 +673,23 @@ export default {
 				type: 'string',
 				description: 'New display name'
 			}
+		}
+	},
+
+	SetLayer: {
+		description: 'Change Layer in Input according to Value parameter. Example: 1,2 changes Layer1 to Input2',
+		parameters: {
+			Input: 'input',
+			Value: [ // Composite - separated by ","
+				{
+					type: 'number',
+					description: 'Overlay number (1 to 4)'
+				},
+				{
+					type: 'string',
+					description: 'Input to set as layer'
+				},
+			],
 		}
 	},
 
@@ -671,7 +716,7 @@ export default {
 	},
 
 	SetPictureEffect: {
-		description: 'Set transition effect for Photos and PowerPoint Inputs.',
+		description: 'Set transition effect for Photos and PowerPoint Inputs',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -682,7 +727,7 @@ export default {
 	},
 
 	SetPictureEffectDuration: {
-		description: 'Set duration of transition effect for Photos and PowerPoint Inputs.',
+		description: 'Set duration of transition effect for Photos and PowerPoint Inputs',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -693,7 +738,7 @@ export default {
 	},
 
 	SetPictureTransition: {
-		description: 'Set transition time between Photos and PowerPoint slides.',
+		description: 'Set transition time between Photos and PowerPoint slides',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -737,7 +782,7 @@ export default {
 	},
 
 	SetZoom: {
-		description: 'Change current Zoom level of Input.',
+		description: 'Change current Zoom level of Input',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -748,21 +793,21 @@ export default {
 	},
 
 	SharpenOff: {
-		description: 'Switch off sharpen for Input.',
+		description: 'Switch off sharpen for Input',
 		parameters: {
 			Input: 'input'
 		}
 	},
 
 	SharpenOn: {
-		description: 'Switch on sharpen for Input.',
+		description: 'Switch on sharpen for Input',
 		parameters: {
 			Input: 'input'
 		}
 	},
 
 	VideoCallAudioSource: {
-		description: 'Select audio source to route to Video Call (to let the caller receive the selected audio). Including mix-minus.',
+		description: 'Select audio source to route to Video Call (to let the caller receive the selected audio). Including mix-minus',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -773,7 +818,7 @@ export default {
 	},
 
 	VideoCallVideoSource: {
-		description: 'Select video source to route to Video Call (to let the caller receive the selected video).',
+		description: 'Select video source to route to Video Call (to let the caller receive the selected video)',
 		parameters: {
 			Input: 'input',
 			Value: {
@@ -817,7 +862,7 @@ export default {
 	},
 
 	WaitForCompletion: {
-		description: 'Wait for a Video Input to reach the end of playback.',
+		description: 'Wait for a Video Input to reach the end of playback',
 		parameters: {
 			Input: 'input',
 
