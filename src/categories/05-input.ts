@@ -359,6 +359,23 @@ export default {
 		}
 	},
 
+	MoveLayer: {
+		description: 'Move Layer in Input according to Value parameter',
+		parameters: {
+			Input: 'input',
+			Value: [ // Composite
+				{
+					type: 'number',
+					description: 'FromIndex (starting at 1)'
+				},
+				{
+					type: 'number',
+					description: 'ToIndex (starting at 1)'
+				},
+			]
+		}
+	},
+
 	NextItem: {
 		description: 'Move to next item in List',
 		parameters: {
@@ -683,7 +700,7 @@ export default {
 			Value: [ // Composite - separated by ","
 				{
 					type: 'number',
-					description: 'Overlay number (1 to 4)'
+					description: 'Layer number (1 to 10)'
 				},
 				{
 					type: 'string',
