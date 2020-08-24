@@ -1,5 +1,5 @@
 # vmix-function-list
-Complete list of available functions in vMix.
+Complete list of available functions in vMix. Structured list read out from https://www.vmix.com/help23/ShortcutFunctionReference.html and from inside vMix > Settings > Shortcuts.
 
 [![package json version](https://img.shields.io/github/package-json/v/jensstigaard/vmix-function-list.svg)](https://www.github/jensstigaard/vmix-function-list)
 [![npm version](https://badge.fury.io/js/vmix-function-list.svg)](https://www.npmjs.com/package/vmix-function-list)
