@@ -28,7 +28,7 @@ export default {
 				description: 'Can be set to one of the following values: Output, Preview, MultiView, Input. When the value is Input, also the Input parameter must be set to a valid Input number, name or UUID'
 			},
 			Input: {
-				type: 'string',
+				type: 'input',
 				optional: true
 			},
 		}
@@ -41,7 +41,7 @@ export default {
 				description: 'Can be set to one of the following values: Output, Preview, MultiView, Input. When the value is Input, also the Input parameter must be set to a valid Input number, name or UUID'
 			},
 			Input: {
-				type: 'string',
+				type: 'input',
 				optional: true
 			},
 		}
@@ -54,7 +54,7 @@ export default {
 				description: 'Can be set to one of the following values: Output, Preview, MultiView, Input. When the value is Input, also the Input parameter must be set to a valid Input number, name or UUID'
 			},
 			Input: {
-				type: 'string',
+				type: 'input',
 				optional: true
 			},
 		}
@@ -67,11 +67,26 @@ export default {
 				description: 'Can be set to one of the following values: Output, Preview, MultiView, Input. When the value is Input, also the Input parameter must be set to a valid Input number, name or UUID'
 			},
 			Input: {
-				type: 'string',
+				type: 'input',
 				optional: true
 			},
 		}
 	},
+
+	SetOutputExternal2: {
+		description: 'Change what is displayed on the External2 output.',
+		parameters: {
+			Value: {
+				type: 'string',
+				description: 'Can be set to one of the following values: Output, Preview, MultiView, Input. When the value is Input, also the Input parameter must be set to a valid Input number, name or UUID'
+			},
+			Input: {
+				type: 'input',
+				optional: true
+			},
+		}
+	},
+
 
 	Snapshot: {
 		description: 'Create a snapshot image of the current Output. Optional Value specifies save Filename, otherwise a save file window will appear. Filename can specify date, for example mysnapshot {0:dd MMM yyyy}.jpg',
@@ -99,6 +114,39 @@ export default {
 	StartMultiCorder: 'Start MultiCorder',
 
 	StartRecording: 'Start recording',
+
+	StartSRTOutput: {
+		description: 'Optional output number starting from 0. Leave blank to control Output 1 only.',
+		parameters: {
+			Value: {
+				type: 'number',
+				optional: true,
+				description: 'Optional output number starting from 0. Leave blank to control all streams'
+			}
+		}
+	},
+
+	StartStopSRTOutput: {
+		description: 'Optional output number starting from 0. Leave blank to control Output 1 only.',
+		parameters: {
+			Value: {
+				type: 'number',
+				optional: true,
+				description: 'Optional output number starting from 0. Leave blank to control all streams'
+			}
+		}
+	},
+
+	StopSRTOutput: {
+		description: 'Optional output number starting from 0. Leave blank to control Output 1 only.',
+		parameters: {
+			Value: {
+				type: 'number',
+				optional: true,
+				description: 'Optional output number starting from 0. Leave blank to control all streams'
+			}
+		}
+	},
 
 	StartStopExternal: 'Toggle start/stop external output',
 

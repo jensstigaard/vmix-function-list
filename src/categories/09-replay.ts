@@ -105,6 +105,26 @@ export default {
 		}
 	},
 
+	ReplayJumpFramesFastOff: {
+		description: 'ReplayJumpFrames jumps 1 frame for each value instead of 1 second.',
+		parameters: {
+			Channel: {
+				type: 'string',
+				description: 'Valid values: Current, A or B'
+			}
+		}
+	},
+
+	ReplayJumpFramesFastOn: {
+		description: 'ReplayJumpFrames jumps 1 second for each value instead of 1 frame.',
+		parameters: {
+			Channel: {
+				type: 'string',
+				description: 'Valid values: Current, A or B'
+			}
+		}
+	},
+
 	ReplayJumpToNow: 'Replay jump to now',
 
 	ReplayLastEventCameraOff: {
@@ -284,6 +304,12 @@ export default {
 
 	ReplayRecorded: 'Replay: Set in Recorded mode (non live)',
 
+	ReplaySelectAllEvents: 'Select all events in active channel.',
+
+	ReplaySelectChannelA: '',
+	ReplaySelectChannelAB: '',
+	ReplaySelectChannelB: '',
+
 	ReplaySelectedEventCameraOff: {
 		description: 'Replay: Turn off desired camera angle for selected event',
 		parameters: {
@@ -322,6 +348,19 @@ export default {
 	ReplaySelectEvents6: 'Replay: Select events category 6',
 	ReplaySelectEvents7: 'Replay: Select events category 7',
 	ReplaySelectEvents8: 'Replay: Select events category 8',
+
+	ReplaySelectEvents9: 'Replay: Select events category 9',
+	ReplaySelectEvents10: 'Replay: Select events category 10',
+	ReplaySelectEvents11: 'Replay: Select events category 11',
+	ReplaySelectEvents12: 'Replay: Select events category 12',
+	ReplaySelectEvents13: 'Replay: Select events category 13',
+	ReplaySelectEvents14: 'Replay: Select events category 14',
+	ReplaySelectEvents15: 'Replay: Select events category 15',
+	ReplaySelectEvents16: 'Replay: Select events category 16',
+	ReplaySelectEvents17: 'Replay: Select events category 17',
+	ReplaySelectEvents18: 'Replay: Select events category 18',
+	ReplaySelectEvents19: 'Replay: Select events category 19',
+	ReplaySelectEvents20: 'Replay: Select events category 20',
 
 	ReplaySelectFirstEvent: 'Replay: Select first event (oldest - in top) of active list/category',
 	ReplaySelectLastEvent: 'Replay: Select Last event (newest - in bottom) of active list/category',
@@ -407,10 +446,13 @@ export default {
 	ReplayShowHide: 'Replay: Show/hide replay window',
 
 	ReplayStartRecording: 'Replay: Start recording of replay session',
+	ReplayStartStopRecording: 'Replay: Toggle start/stop recording replay',
 
 	ReplayStopEvents: 'Replay: Stop events playback',
 
 	ReplayStopRecording: 'Replay: Stop recording of replay session',
+
+	ReplaySwapChannels: 'Swap A to B and vice versa, includes angles and playback status.',
 
 	ReplayToggleLastEventCamera1: 'Replay: Toggle Camera angle 1 for Last event',
 	ReplayToggleLastEventCamera2: 'Replay: Toggle Camera angle 2 for Last event',
@@ -441,6 +483,16 @@ export default {
 				type: 'number',
 				description: 'Speed 0.0-1.0'
 			},
+		}
+	},
+
+	ReplayUpdateSelectedSpeedDefault: {
+		description: 'Update Selected Event to use Default Speed.',
+		parameters: {
+			Channel: {
+				type: 'string',
+				description: 'Valid values: Current, A or B'
+			}
 		}
 	}
 }

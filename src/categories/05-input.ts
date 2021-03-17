@@ -133,6 +133,13 @@ export default {
 		}
 	},
 
+	CreateVirtualInput: {
+		description: 'Create Virtual Input based on existing input',
+		parameters: {
+			Input: 'input'
+		}
+	},
+
 	DeinterlaceOff: {
 		description: 'Switch off deinterlacing for Input',
 		parameters: {
