@@ -1,5 +1,5 @@
 //
-import { VmixFunctionParameterType } from './../vmix-function-definition'
+import { VmixFunctionParameterType } from '../vmix-function-definition'
 
 // Function description type - can only be a string
 type FunctionDescriptionDefinition = string
