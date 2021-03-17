@@ -1044,6 +1044,32 @@
   },
   {
     "category": "Replay",
+    "function": "ReplayJumpFramesFastOff",
+    "description": "ReplayJumpFrames jumps 1 frame for each value instead of 1 second.",
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplayJumpFramesFastOn",
+    "description": "ReplayJumpFrames jumps 1 second for each value instead of 1 frame.",
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Replay",
     "function": "ReplayJumpToNow",
     "description": "Replay jump to now",
     "parameters": {},
@@ -1401,6 +1427,34 @@
   },
   {
     "category": "Replay",
+    "function": "ReplaySelectAllEvents",
+    "description": "Select all events in active channel.",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectChannelA",
+    "description": "",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectChannelAB",
+    "description": "",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectChannelB",
+    "description": "",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
     "function": "ReplaySelectedEventCameraOff",
     "description": "Replay: Turn off desired camera angle for selected event",
     "parameters": {
@@ -1491,6 +1545,90 @@
     "category": "Replay",
     "function": "ReplaySelectEvents8",
     "description": "Replay: Select events category 8",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents9",
+    "description": "Replay: Select events category 9",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents10",
+    "description": "Replay: Select events category 10",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents11",
+    "description": "Replay: Select events category 11",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents12",
+    "description": "Replay: Select events category 12",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents13",
+    "description": "Replay: Select events category 13",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents14",
+    "description": "Replay: Select events category 14",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents15",
+    "description": "Replay: Select events category 15",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents16",
+    "description": "Replay: Select events category 16",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents17",
+    "description": "Replay: Select events category 17",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents18",
+    "description": "Replay: Select events category 18",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents19",
+    "description": "Replay: Select events category 19",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySelectEvents20",
+    "description": "Replay: Select events category 20",
     "parameters": {},
     "examples": []
   },
@@ -1648,6 +1786,13 @@
   },
   {
     "category": "Replay",
+    "function": "ReplayStartStopRecording",
+    "description": "Replay: Toggle start/stop recording replay",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
     "function": "ReplayStopEvents",
     "description": "Replay: Stop events playback",
     "parameters": {},
@@ -1657,6 +1802,13 @@
     "category": "Replay",
     "function": "ReplayStopRecording",
     "description": "Replay: Stop recording of replay session",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySwapChannels",
+    "description": "Swap A to B and vice versa, includes angles and playback status.",
     "parameters": {},
     "examples": []
   },
@@ -1794,6 +1946,19 @@
       "Value": {
         "type": "number",
         "description": "Speed 0.0-1.0",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplayUpdateSelectedSpeedDefault",
+    "description": "Update Selected Event to use Default Speed.",
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
         "optional": false
       }
     },
@@ -2456,6 +2621,19 @@
     "category": "Input",
     "function": "ColourCorrectionReset",
     "description": "Reset Colour Correction for Input",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "CreateVirtualInput",
+    "description": "Create Virtual Input based on existing input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -4243,7 +4421,7 @@
         "optional": false
       },
       "Input": {
-        "type": "string",
+        "type": "input",
         "description": "",
         "optional": true
       }
@@ -4261,7 +4439,7 @@
         "optional": false
       },
       "Input": {
-        "type": "string",
+        "type": "input",
         "description": "",
         "optional": true
       }
@@ -4279,7 +4457,7 @@
         "optional": false
       },
       "Input": {
-        "type": "string",
+        "type": "input",
         "description": "",
         "optional": true
       }
@@ -4297,7 +4475,25 @@
         "optional": false
       },
       "Input": {
+        "type": "input",
+        "description": "",
+        "optional": true
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Output",
+    "function": "SetOutputExternal2",
+    "description": "Change what is displayed on the External2 output.",
+    "parameters": {
+      "Value": {
         "type": "string",
+        "description": "Can be set to one of the following values: Output, Preview, MultiView, Input. When the value is Input, also the Input parameter must be set to a valid Input number, name or UUID",
+        "optional": false
+      },
+      "Input": {
+        "type": "input",
         "description": "",
         "optional": true
       }
@@ -4354,6 +4550,45 @@
     "function": "StartRecording",
     "description": "Start recording",
     "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Output",
+    "function": "StartSRTOutput",
+    "description": "Optional output number starting from 0. Leave blank to control Output 1 only.",
+    "parameters": {
+      "Value": {
+        "type": "number",
+        "description": "Optional output number starting from 0. Leave blank to control all streams",
+        "optional": true
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Output",
+    "function": "StartStopSRTOutput",
+    "description": "Optional output number starting from 0. Leave blank to control Output 1 only.",
+    "parameters": {
+      "Value": {
+        "type": "number",
+        "description": "Optional output number starting from 0. Leave blank to control all streams",
+        "optional": true
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Output",
+    "function": "StopSRTOutput",
+    "description": "Optional output number starting from 0. Leave blank to control Output 1 only.",
+    "parameters": {
+      "Value": {
+        "type": "number",
+        "description": "Optional output number starting from 0. Leave blank to control all streams",
+        "optional": true
+      }
+    },
     "examples": []
   },
   {
