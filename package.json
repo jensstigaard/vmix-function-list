@@ -9,7 +9,7 @@
     "build": "tsc",
     "build-render": "yarn build && yarn render",
     "build-test": "yarn build && yarn test",
-    "clean": "rm -rf ./dist/*",
+    "clean": "rm -ifr ./dist",
     "prepublish": "yarn clean && yarn build",
     "render": "node scratch/render-complete-function-list.js",
     "test": "mocha"
@@ -25,13 +25,16 @@
   },
   "homepage": "https://github.com/jensstigaard/vmix-function-list#readme",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21",
+    "xmldom": "^0.5.0",
+    "xpath": "^0.0.32"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.150",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "^13.13.4",
-    "mocha": "^7.1.2",
-    "typescript": "^3.8.3"
+    "@types/lodash": "^4.14.168",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.35",
+    "mocha": "^8.3.2",
+    "typescript": "^4.2"
   }
 }
