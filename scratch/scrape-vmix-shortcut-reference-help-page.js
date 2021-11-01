@@ -14,17 +14,17 @@ const domparser = new xmldom.DOMParser(
 	{
 		locator: {},
 		errorHandler: {
-			warning: function (w) { },
-			error: function (e) { },
+			warning: function (_w) { },
+			error: function (_e) { },
 			fatalError: function (e) { console.error(e) }
 		}
 	}
 )
 
-const USE_LOCAL_DATA = true
+const USE_LOCAL_DATA = false
 
 const EXTERNAL_DATA_URL = 'https://www.vmix.com/help24/ShortcutFunctionReference.html'
-const LOCAL_DATA_PATH = path.resolve(__dirname, 'scrape.html')
+const LOCAL_DATA_PATH = path.resolve(__dirname, 'scraped.html')
 
 async function getExternalData() {
 	const response = await axios.get(EXTERNAL_DATA_URL)
@@ -47,8 +47,11 @@ function getLocalData() {
 	return fs.readFileSync(LOCAL_DATA_PATH, 'utf-8')
 }
 
+/**
+ * Main function
+ * @returns
+ */
 async function main() {
-
 	const data = USE_LOCAL_DATA ? getLocalData() : await getExternalData()
 
 	const xml = domparser.parseFromString(data)
@@ -63,18 +66,18 @@ async function main() {
 	const rows = xpath.select('tr', table)
 	console.log('Found rows', rows.length)
 
-	const functions = []
+	const newFunctions = []
 
 	let currentCategory = null
-	rows.forEach(row => {
-		const cells = xpath.select('td', row)
+	rows.slice(1, rows.length).forEach(row => {
+		const rowCells = xpath.select('td', row)
 
-		if (cells.length !== 3) {
+		if (rowCells.length !== 3) {
 			console.log('Unexcepted number of cells found in row...')
 			return
 		}
 
-		const firstCell = cells[0]
+		const firstCell = rowCells[0]
 		const firstCellStyle = firstCell.attributes && firstCell.attributes.getNamedItem('style') ? firstCell.attributes.getNamedItem('style') : undefined
 
 		// Is the row a header (including category title)?
@@ -88,32 +91,40 @@ async function main() {
 		// Guard no current category
 		if (!currentCategory) {
 			console.error('Somehow has not seen header yet...')
+			console.log(rowCells.map(c => c.textContent))
 			return
 		}
 
 		const func = {
 			category: currentCategory,
-			functionName: cells[0].textContent.trim(),
-			description: cells[1].textContent.trim(),
-			parameters: cells[2].textContent.trim().split(',')
+			functionName: rowCells[0].textContent.trim(),
+			description: rowCells[1].textContent.trim(),
+			parameters: rowCells[2].textContent.trim().split(',')
 		}
+
+		// console.log(func.functionName)
 
 		// Add func to array if not existing
 		try {
 			list.get(func.functionName)
 		} catch (e) {
-			functions.push(func)
+			newFunctions.push(func)
 		}
 	})
 
-	console.log('Total number of functions found:', functions.length)
+	if (newFunctions.length === 0) {
+		console.log('No new functions seen...')
+		return
+	}
 
-	const functionsByCategory = _.groupBy(functions, 'category')
+	console.log('Total number of new functions found:', newFunctions.length)
 
-	Object.entries(functionsByCategory).forEach(([category, functions]) => {
+	const newfunctionsByCategory = _.groupBy(newFunctions, 'category')
+
+	Object.entries(newfunctionsByCategory).forEach(([category, functions]) => {
 		console.log('--', category, functions.length, '--')
 		functions.forEach(f => console.log(f.functionName, f.description, f.parameters))
-		console.log()
+		console.log('')
 	})
 }
 
