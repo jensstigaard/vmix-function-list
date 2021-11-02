@@ -25,7 +25,7 @@ fs.writeFileSync(destPathMinifiedList, JSON.stringify(funcs))
 console.log('(list minified)', '\t\t', destPathMinifiedList)
 
 // Minimised version JSON to file
-fs.writeFileSync(destPathCountNumOfFunctions, funcs.length)
+fs.writeFileSync(destPathCountNumOfFunctions, `${funcs.length}`)
 console.log('(count number of functions)\t', destPathCountNumOfFunctions)
 
 console.log()
