@@ -12,6 +12,7 @@
     "clean": "rm -ifr ./dist",
     "prepublish": "yarn clean && yarn build",
     "render": "node scratch/render-complete-function-list.js",
+    "scrape": "node scratch/scrape-vmix-shortcut-reference-help-page.js",
     "test": "mocha"
   },
   "repository": {
