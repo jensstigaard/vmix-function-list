@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/jensstigaard/vmix-function-list#readme",
   "dependencies": {
+    "@xmldom/xmldom": "^0.7.5",
     "axios": "^0.24.0",
     "lodash": "^4.17.21",
-    "xmldom": "^0.6.0",
     "xpath": "^0.0.32"
   },
   "devDependencies": {

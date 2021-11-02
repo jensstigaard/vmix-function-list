@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const _ = require('lodash')
 const axios = require('axios')
-const xmldom = require('xmldom')
+const xmldom = require('@xmldom/xmldom')
 const xpath = require('xpath')
 
 const FunctionList = require('../dist/index').default
