@@ -7,6 +7,8 @@ const xpath = require('xpath')
 
 const FunctionList = require('../dist/index').default
 
+const VMIX_VERSION = 25
+
 const list = new FunctionList()
 
 const domparser = new xmldom.DOMParser(
@@ -23,7 +25,7 @@ const domparser = new xmldom.DOMParser(
 
 const USE_LOCAL_DATA = false
 
-const EXTERNAL_DATA_URL = 'https://www.vmix.com/help24/ShortcutFunctionReference.html'
+const EXTERNAL_DATA_URL = `https://www.vmix.com/help${VMIX_VERSION}/ShortcutFunctionReference.html`
 const LOCAL_DATA_PATH = path.resolve(__dirname, 'scraped.html')
 
 async function getExternalData() {
@@ -64,7 +66,7 @@ async function main() {
 	}
 
 	const rows = xpath.select('tr', table)
-	console.log('Found rows', rows.length)
+	console.log('Found rows in functions table:', rows.length)
 
 	const newFunctions = []
 
@@ -122,6 +124,7 @@ async function main() {
 	const newfunctionsByCategory = _.groupBy(newFunctions, 'category')
 
 	Object.entries(newfunctionsByCategory).forEach(([category, functions]) => {
+		console.log('')
 		console.log('--', category, functions.length, '--')
 		functions.forEach(f => console.log(f.functionName, f.description, f.parameters))
 		console.log('')
