@@ -9,7 +9,7 @@ const dir = path.resolve(__dirname, '../rendered')
 
 const destPathPrettyList = path.resolve(dir, 'list.json')
 const destPathMinifiedList = path.resolve(dir, 'list.min.json')
-const destPathCountNumOfFunctions = path.resolve(dir, 'count.json')
+const destPathCountNumOfFunctions = path.resolve(dir, 'count.txt')
 
 const funcs = list.all()
 
