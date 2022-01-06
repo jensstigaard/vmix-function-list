@@ -2167,6 +2167,13 @@
   },
   {
     "category": "Overlay",
+    "function": "OverlayInput1Last",
+    "description": "Toggle Overlay1 On/Off with last used Input on this channel",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Overlay",
     "function": "OverlayInput1Off",
     "description": "Immediately switch Overlay1 Off (Cut)",
     "parameters": {},
@@ -2210,6 +2217,13 @@
         "optional": false
       }
     },
+    "examples": []
+  },
+  {
+    "category": "Overlay",
+    "function": "OverlayInput2Last",
+    "description": "Toggle Overlay2 On/Off with last used Input on this channel",
+    "parameters": {},
     "examples": []
   },
   {
@@ -2261,6 +2275,13 @@
   },
   {
     "category": "Overlay",
+    "function": "OverlayInput3Last",
+    "description": "Toggle Overlay3 On/Off with last used Input on this channel",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Overlay",
     "function": "OverlayInput3Off",
     "description": "Immediately switch Overlay3 Off (Cut)",
     "parameters": {},
@@ -2304,6 +2325,13 @@
         "optional": false
       }
     },
+    "examples": []
+  },
+  {
+    "category": "Overlay",
+    "function": "OverlayInput4Last",
+    "description": "Toggle Overlay4 On/Off with last used Input on this channel",
+    "parameters": {},
     "examples": []
   },
   {
