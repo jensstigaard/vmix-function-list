@@ -4,8 +4,9 @@ Complete list of available functions in vMix. Structured list read out from http
 [![package json version](https://img.shields.io/github/package-json/v/jensstigaard/vmix-function-list.svg)](https://www.github/jensstigaard/vmix-function-list)
 [![npm version](https://badge.fury.io/js/vmix-function-list.svg)](https://www.npmjs.com/package/vmix-function-list)
 
-The version number of this repository reflects which version number of vMix the repository is updated for. 
-When a new patch is released to vMix, it is the plan that I check through the help files (and/or vMix itself) for whether new functions has been added to the vMix API, and this function list will be updated accordingly.
+The version number of this repository reflects which version number of vMix the repository is updated for.
+
+When a new patch or version is released to vMix, it is the plan that I check through the help files (and/or vMix itself) for whether new functions has been added to the vMix API, and this function list will be updated accordingly.
 
 ## Methods
 `.all()` - Returns a complete list of available functions in the vMix API.
