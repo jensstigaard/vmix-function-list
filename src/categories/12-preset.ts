@@ -1,8 +1,5 @@
 export default {
-
-	LastPreset: {
-		description: 'Load the last preset',
-	},
+	LastPreset: 'Load the last preset',
 
 	OpenPreset: {
 		description: 'Load preset from the specified Filename',

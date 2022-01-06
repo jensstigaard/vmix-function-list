@@ -64,7 +64,8 @@ export default class FunctionList {
 	}
 
 	/**
-	 * 
+	 * Parse functions
+	 *
 	 * @param functions
 	 */
 	protected parseFunctions = (
