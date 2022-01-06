@@ -70,6 +70,8 @@ export default {
 		}
 	},
 
+	OverlayInput1Last: 'Toggle Overlay1 On/Off with last used Input on this channel',
+
 	OverlayInput1Off: 'Immediately switch Overlay1 Off (Cut)',
 	OverlayInput1Out: 'Transition Out Overlay1',
 	OverlayInput1Zoom: 'Zooms PIP Overlay 1 to fill Fullscreen and vice versa',
@@ -91,6 +93,8 @@ export default {
 			Input: 'input'
 		}
 	},
+
+	OverlayInput2Last: 'Toggle Overlay2 On/Off with last used Input on this channel',
 
 	OverlayInput2Off: 'Immediately switch Overlay2 Off (Cut)',
 	OverlayInput2Out: 'Transition Out Overlay2',
@@ -114,6 +118,8 @@ export default {
 		}
 	},
 
+	OverlayInput3Last: 'Toggle Overlay3 On/Off with last used Input on this channel',
+
 	OverlayInput3Off: 'Immediately switch Overlay3 Off (Cut)',
 	OverlayInput3Out: 'Transition Out Overlay3',
 	OverlayInput3Zoom: 'Zooms PIP Overlay 3 to fill Fullscreen and vice versa',
@@ -135,6 +141,8 @@ export default {
 			Input: 'input'
 		}
 	},
+
+	OverlayInput4Last: 'Toggle Overlay4 On/Off with last used Input on this channel',
 
 	OverlayInput4Off: 'Immediately switch Overlay4 Off (Cut)',
 	OverlayInput4Out: 'Transition Out Overlay4',
