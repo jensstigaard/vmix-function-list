@@ -54,9 +54,10 @@ console.log('Get specific function: SetText', VmixFunctionList.get('SetText'))
 
 
 # Authors
-Jens Grønhøj Stigaard - <jens@stigaard.info> (http://jens.stigaard.info)
+[Jens Stigaard](https://github.com/jensstigaard)
 
 
 # Contribution
-You are more than welcome to contribute to the repository! If you find any inconsistencies or missing functions, you are welcome to tell about it in an Issue or make a Pull Request with the desired changes.
+You are more than welcome to contribute to the repository!
+If you find any inconsistencies or missing functions, you are welcome to tell about it in an issue or make a pull request with the desired changes.
 
