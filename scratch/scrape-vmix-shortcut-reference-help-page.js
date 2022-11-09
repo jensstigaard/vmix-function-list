@@ -7,7 +7,7 @@ const xpath = require('xpath')
 
 const FunctionList = require('../dist/index').default
 
-const VMIX_VERSION = 25
+const VMIX_VERSION = 26
 
 const list = new FunctionList()
 
@@ -104,11 +104,37 @@ async function main() {
 			parameters: rowCells[2].textContent.trim().split(',')
 		}
 
+		// Sanitize parameters
+		func.parameters = func.parameters.filter(paramName => paramName !== 'None')
+
 		// console.log(func.functionName)
 
 		// Add func to array if not existing
 		try {
-			list.get(func.functionName)
+			const existingFunc = list.get(func.functionName)
+
+			const existingFuncParamsArr = Object.keys(existingFunc.parameters)
+			const parametersDiff = _.difference(existingFuncParamsArr, func.parameters)
+			if (parametersDiff.length) {
+				// Check for SelectedIndex and SelectedValue being the missing parameters
+				if (!(
+					parametersDiff.length === 2 &&
+					parametersDiff.some(p => p === 'SelectedIndex') &&
+					func.description.includes('SelectedIndex') &&
+					(
+						(
+							parametersDiff.some(p => p === 'SelectedValue') &&
+							func.description.includes('SelectedValue')
+						) || (
+							parametersDiff.some(p => p === 'SelectName')
+							// &&
+							// func.description.includes('SelectName')
+						)
+					)
+				)) {
+					console.log('Function', func.functionName, 'has parameters mismatch', parametersDiff)
+				}
+			}
 		} catch (e) {
 			newFunctions.push(func)
 		}

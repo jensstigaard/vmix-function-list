@@ -133,33 +133,37 @@ export default {
 		}
 	},
 
-	Transition1: {
-		description: 'Clicks the first Transition button in the main vMix window - transitions to what is in preview',
-		parameters: {
-			Input: 'input'
-		}
-	},
+	Transition1: 'Clicks the first Transition button in the main vMix window - transitions to what is in preview',
+	// Transition1: {
+	// 	description: 'Clicks the first Transition button in the main vMix window - transitions to what is in preview',
+	// 	parameters: {
+	// 		Input: 'input'
+	// 	}
+	// },
 
-	Transition2: {
-		description: 'Clicks the second Transition button in the main vMix window - transitions to what is in preview',
-		parameters: {
-			Input: 'input'
-		}
-	},
+	Transition2: 'Clicks the second Transition button in the main vMix window - transitions to what is in preview',
+	// Transition2: {
+	// 	description: 'Clicks the second Transition button in the main vMix window - transitions to what is in preview',
+	// 	parameters: {
+	// 		Input: 'input'
+	// 	}
+	// },
 
-	Transition3: {
-		description: 'Clicks the third Transition button in the main vMix window - transitions to what is in preview',
-		parameters: {
-			Input: 'input'
-		}
-	},
+	Transition3: 'Clicks the third Transition button in the main vMix window - transitions to what is in preview',
+	// Transition3: {
+	// 	description: 'Clicks the third Transition button in the main vMix window - transitions to what is in preview',
+	// 	parameters: {
+	// 		Input: 'input'
+	// 	}
+	// },
 
-	Transition4: {
-		description: 'Clicks the fourth Transition button in the main vMix window - transitions to what is in preview',
-		parameters: {
-			Input: 'input'
-		}
-	},
+	Transition4: 'Clicks the fourth Transition button in the main vMix window - transitions to what is in preview',
+	// Transition4: {
+	// 	description: 'Clicks the fourth Transition button in the main vMix window - transitions to what is in preview',
+	// 	parameters: {
+	// 		Input: 'input'
+	// 	}
+	// },
 
 	// These transition functions are somehow not mentioned in the vMix help documentation.
 	// They are present inside vMix under Transition category when setting up a shortcut

@@ -664,28 +664,32 @@ export default {
 	SetDynamicInput1: {
 		description: 'Set Dynamic Input 1',
 		parameters: {
-			Input: 'input'
+			Value: 'input'
+			// Input: 'input'
 		}
 	},
 
 	SetDynamicInput2: {
 		description: 'Set Dynamic Input 2',
 		parameters: {
-			Input: 'input'
+			Value: 'input'
+			// Input: 'input'
 		}
 	},
 
 	SetDynamicInput3: {
 		description: 'Set Dynamic Input 3',
 		parameters: {
-			Input: 'input'
+			Value: 'input'
+			// Input: 'input'
 		}
 	},
 
 	SetDynamicInput4: {
 		description: 'Set Dynamic Input 4',
 		parameters: {
-			Input: 'input'
+			Value: 'input'
+			// Input: 'input'
 		}
 	},
 

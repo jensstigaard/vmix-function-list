@@ -283,6 +283,30 @@ export default {
 		},
 	},
 
+	// Added in version 26
+	SetColor: {
+		description: 'Change Color in Title using HTML #xxxxxxxx format. SelectedIndex or SelectedValue can be used to select object.',
+		parameters: {
+			Input: 'input',
+
+			SelectedIndex: {
+				type: 'number',
+				optional: true,
+			},
+			SelectedValue: {
+				type: 'string',
+				optional: true,
+			},
+
+			// Color value
+			Value: {
+				type: 'string',
+				description: 'Color',
+			},
+
+		}
+	},
+
 
 	StartCountdown: {
 		description: 'Start Countdown',

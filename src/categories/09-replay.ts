@@ -183,6 +183,17 @@ export default {
 		}
 	},
 
+	// Added in version 26
+	ReplayMarkInOutLiveFuture: {
+		description: 'Number of seconds into the future to use when creating a new event.',
+		parameters: {
+			Value: {
+				type: 'number',
+				description: 'Seconds'
+			}
+		}
+	},
+
 	ReplayMarkInOutRecorded: {
 		description: 'Replay: Mark In/Out based on number of seconds back from current selected timestamp of recorded session',
 		parameters: {
@@ -378,6 +389,17 @@ export default {
 		}
 	},
 
+	// Added in version 26
+	ReplaySetChannelAToBTimecode: {
+		description: 'Replay: Set A Timecode to B Timecode',
+	},
+
+	// Added in version 26
+	ReplaySetChannelBToATimecode: {
+		description: 'Replay: Set B Timecode to A Timecode',
+	},
+
+
 	ReplaySetDirectionBackward: 'Replay: Set direction backwards - Reverse playback',
 	ReplaySetDirectionForward: 'Replay: Set direction backwards - Forward (normal) playback',
 
@@ -440,6 +462,27 @@ export default {
 				type: 'number',
 				description: 'Speed 0.0-1.0'
 			},
+
+			Channel: {
+				type: 'string',
+				description: 'Valid values: Current, A or B'
+			}
+		}
+	},
+
+	// Added in version 26
+	ReplaySetTimecode: {
+		description: 'Replay: Set position to Timecode',
+		parameters: {
+			Value: {
+				type: 'number',
+				description: 'Timecode in format yyyy-MM-ddTHH:mm:ss.fff'
+			},
+
+			Channel: {
+				type: 'string',
+				description: 'Valid values: Current, A or B'
+			}
 		}
 	},
 
@@ -476,15 +519,7 @@ export default {
 	ReplayUpdateSelectedOutPoint: 'Replay: Update Mark Out point of Selected Event to current Position',
 
 	// New in vMix 24
-	ReplayUpdateSelectedSpeed: {
-		description: 'Replay: Update speed of Selected Event',
-		parameters: {
-			Value: {
-				type: 'number',
-				description: 'Speed 0.0-1.0'
-			},
-		}
-	},
+	ReplayUpdateSelectedSpeed: 'Replay: Update Selected Event to use Current Speed.',
 
 	ReplayUpdateSelectedSpeedDefault: {
 		description: 'Update Selected Event to use Default Speed.',
