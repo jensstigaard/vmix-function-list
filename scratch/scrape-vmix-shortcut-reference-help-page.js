@@ -5,11 +5,11 @@ const axios = require('axios')
 const xmldom = require('@xmldom/xmldom')
 const xpath = require('xpath')
 
-const FunctionList = require('../dist/index').default
+const vMixFunctionList = require('../dist/index').default
 
 const VMIX_VERSION = 26
 
-const list = new FunctionList()
+const existingFunctionList = new vMixFunctionList()
 
 const domparser = new xmldom.DOMParser(
 	// https://stackoverflow.com/questions/56213117/how-to-silent-all-the-warning-messages-of-xml-dom-in-node-js
@@ -48,6 +48,8 @@ async function getExternalData() {
 function getLocalData() {
 	return fs.readFileSync(LOCAL_DATA_PATH, 'utf-8')
 }
+
+console.log('Number of functions in existing function list:', existingFunctionList.all().length)
 
 /**
  * Main function
@@ -111,28 +113,39 @@ async function main() {
 
 		// Add func to array if not existing
 		try {
-			const existingFunc = list.get(func.functionName)
+			const existingFunc = existingFunctionList.get(func.functionName)
 
 			const existingFuncParamsArr = Object.keys(existingFunc.parameters)
-			const parametersDiff = _.difference(existingFuncParamsArr, func.parameters)
-			if (parametersDiff.length) {
+
+			const isParametersDifferent = !_.isEqual(func.parameters.sort(), existingFuncParamsArr.sort())
+
+			// Is parameters different?
+			if (isParametersDifferent) {
+				const previousParameters = _.difference(existingFuncParamsArr, func.parameters)
+				const newParameters = _.difference(func.parameters, existingFuncParamsArr)
+
 				// Check for SelectedIndex and SelectedValue being the missing parameters
 				if (!(
-					parametersDiff.length === 2 &&
-					parametersDiff.some(p => p === 'SelectedIndex') &&
+					previousParameters.length === 2 &&
+					previousParameters.includes('SelectedIndex') &&
 					func.description.includes('SelectedIndex') &&
 					(
 						(
-							parametersDiff.some(p => p === 'SelectedValue') &&
+							previousParameters.includes('SelectedValue') &&
 							func.description.includes('SelectedValue')
-						) || (
-							parametersDiff.some(p => p === 'SelectName')
-							// &&
-							// func.description.includes('SelectName')
+						)
+						||
+						(
+							previousParameters.includes('SelectedName') &&
+							func.description.includes('SelectedName')
 						)
 					)
 				)) {
-					console.log('Function', func.functionName, 'has parameters mismatch', parametersDiff)
+					console.log(
+						'Function', func.functionName,
+						'in category', func.category,
+						'has parameters mismatch',
+						'Existing=', existingFuncParamsArr, 'Scraped=', func.parameters)
 				}
 			}
 		} catch (e) {
@@ -149,7 +162,9 @@ async function main() {
 
 	const newfunctionsByCategory = _.groupBy(newFunctions, 'category')
 
-	Object.entries(newfunctionsByCategory).forEach(([category, functions]) => {
+	// Print details for new functions
+	Object.entries(newfunctionsByCategory)
+	.forEach(([category, functions]) => {
 		console.log('')
 		console.log('--', category, functions.length, '--')
 		functions.forEach(f => console.log(f.functionName, f.description, f.parameters))
