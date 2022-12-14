@@ -1,3 +1,8 @@
+const CHANNEL = {
+	type: 'string',
+	description: 'Valid values: Current, A or B'
+}
+
 export default {
 
 	ReplayACamera1: 'Set Replay A input to camera 1',
@@ -27,7 +32,12 @@ export default {
 	ReplayCamera7: 'Set Current Replay playout to camera 7',
 	ReplayCamera8: 'Set Current Replay playout to camera 8',
 
-	ReplayChangeDirection: 'Switch replay direction - forward/reverse',
+	ReplayChangeDirection: {
+		description: 'Switch replay direction - forward/reverse',
+		parameters: {
+			Channel: CHANNEL
+		}
+	},
 
 	ReplayChangeSpeed: {
 		description: 'Change replay playback speed',
@@ -35,7 +45,8 @@ export default {
 			Value: {
 				type: 'number',
 				description: 'Speed in percentage'
-			}
+			},
+			Channel: CHANNEL
 		}
 	},
 
@@ -55,39 +66,72 @@ export default {
 			Value: {
 				type: 'number',
 				description: 'Event list 0-19'
-			}
-		}
+			},
+		},
 	},
 
-	ReplayDeleteLastEvent: 'Delete last replay event',
-	ReplayDeleteSelectedEvent: 'Delete selected replay event',
+	ReplayDeleteLastEvent: {
+		description: 'Delete last replay event',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
+	ReplayDeleteSelectedEvent: {
+		description: 'Delete selected replay event',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
 
-	ReplayDuplicateLastEvent: 'Duplicate last replay event',
-	ReplayDuplicateSelectedEvent: 'Duplicate selected replay event',
+	// {
+	// 	description: '',
+	// 	parameters: {
+	// 		Channel: {
+	// 			type: 'string',
+	// 			description: 'Valid values: Current, A or B'
+	// 		},
+	// 	},
+	// },
+
+	ReplayDuplicateLastEvent: {
+		description: 'Duplicate last replay event',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
+	ReplayDuplicateSelectedEvent: {
+		description: 'Duplicate selected replay event',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
 
 	ReplayExportLastEvent: {
 		description: 'Export last replay event to specific folder',
 		parameters: {
+			Channel: CHANNEL,
 			Value: {
 				type: 'string',
-				description: 'Folder'
-			}
+				description: 'Replay clip export destination folder. I.e C:\\\\vMix Replay Exported Clips\\'
+			},
 		}
 	},
 
 	ReplayFastBackward: {
 		description: 'Replay fast backwards',
 		parameters: {
+			Channel: CHANNEL,
 			Value: {
 				type: 'number',
 				description: 'Speed 1-30x'
-			}
+			},
 		}
 	},
 
 	ReplayFastForward: {
 		description: 'Replay fast forward',
 		parameters: {
+			Channel: CHANNEL,
 			Value: {
 				type: 'number',
 				description: 'Speed 1-30x'
@@ -98,9 +142,10 @@ export default {
 	ReplayJumpFrames: {
 		description: 'Replay jump frames',
 		parameters: {
+			Channel: CHANNEL,
 			Value: {
 				type: 'number',
-				description: 'Frames'
+				description: 'Number of frames to jump'
 			}
 		}
 	},
@@ -108,24 +153,23 @@ export default {
 	ReplayJumpFramesFastOff: {
 		description: 'ReplayJumpFrames jumps 1 frame for each value instead of 1 second.',
 		parameters: {
-			Channel: {
-				type: 'string',
-				description: 'Valid values: Current, A or B'
-			}
+			Channel: CHANNEL
 		}
 	},
 
 	ReplayJumpFramesFastOn: {
 		description: 'ReplayJumpFrames jumps 1 second for each value instead of 1 frame.',
 		parameters: {
-			Channel: {
-				type: 'string',
-				description: 'Valid values: Current, A or B'
-			}
+			Channel: CHANNEL,
 		}
 	},
 
-	ReplayJumpToNow: 'Replay jump to now',
+	ReplayJumpToNow: {
+		description: 'Replay jump to now',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
 	ReplayLastEventCameraOff: {
 		description: 'Replay turn off speficied camera angle for last event',
@@ -235,6 +279,8 @@ export default {
 	ReplayMoveSelectedInPoint: {
 		description: 'Replay: Move In-point for selected event',
 		parameters: {
+			Channel: CHANNEL,
+
 			Value: {
 				type: 'number',
 				description: 'Number of frames relative. Negative number = previous in time. Positive number = Forward in time'
@@ -245,6 +291,8 @@ export default {
 	ReplayMoveSelectedOutPoint: {
 		description: 'Replay: Move Out-point for selected event',
 		parameters: {
+			Channel: CHANNEL,
+
 			Value: {
 				type: 'number',
 				description: 'Number of frames relative. Negative number = previous in time. Positive number = Forward in time'
@@ -252,17 +300,45 @@ export default {
 		}
 	},
 
-	ReplayPause: 'Replay: Pause playback',
-	ReplayPlay: 'Replay: Resume playback',
+	ReplayPause: {
+		description: 'Replay: Pause playback',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
 
-	ReplayPlayAllEvents: 'Replay: Play all events in active list (do NOT automatically transition to output)',
-	ReplayPlayAllEventsToOutput: 'Replay: Play all events in active list (automatically transition to output)',
+	ReplayPlay: {
+		description: 'Replay: Resume playback',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
 
-	ReplayPlayBackward: 'Replay: Reverse playback of replay',
+	ReplayPlayAllEvents: {
+		description: 'Replay: Play all events in active list (do NOT automatically transition to output)',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
+	ReplayPlayAllEventsToOutput: {
+		description: 'Replay: Play all events in active list (automatically transition to output)',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
+
+	ReplayPlayBackward: {
+		description: 'Replay: Reverse playback of replay',
+		parameters: {
+			Channel: CHANNEL,
+		},
+	},
 
 	ReplayPlayEvent: {
 		description: 'Replay: Play Event by ID',
 		parameters: {
+			Channel: CHANNEL,
+
 			Value: {
 				type: 'number',
 				description: 'Event number: 0-1000'
@@ -273,6 +349,8 @@ export default {
 	ReplayPlayEventsByID: {
 		description: 'Replay: Play Events by ID (do NOT automatically transition to output)',
 		parameters: {
+			Channel: CHANNEL,
+
 			Value: {
 				type: 'string',
 				description: 'List of Events each with number 0-1000'
@@ -283,6 +361,8 @@ export default {
 	ReplayPlayEventsByIDToOutput: {
 		description: 'Replay: Play Events by ID (automatically transition to output)',
 		parameters: {
+			Channel: CHANNEL,
+
 			Value: {
 				type: 'string',
 				description: 'List of Events each with number 0-1000'
@@ -293,6 +373,8 @@ export default {
 	ReplayPlayEventToOutput: {
 		description: 'Replay: Play Event by ID',
 		parameters: {
+			Channel: CHANNEL,
+
 			Value: {
 				type: 'number',
 				description: 'Event number: 0-1000'
@@ -300,18 +382,59 @@ export default {
 		}
 	},
 
-	ReplayPlayForward: 'Replay: Forward Playback of replay inputs',
+	ReplayPlayForward: {
+		description: 'Replay: Forward Playback of replay inputs',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
-	ReplayPlayLastEvent: 'Replay: Playback of last event (do NOT automatically transition to output)',
-	ReplayPlayLastEventToOutput: 'Replay: Playback of last event (automatically transition to output)',
+	ReplayPlayLastEvent: {
+		description: 'Replay: Playback of last event (do NOT automatically transition to output)',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplayPlayLastEventToOutput: {
+		description: 'Replay: Playback of last event (automatically transition to output)',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
-	ReplayPlayNext: 'Replay: Play Next event',
+	ReplayPlayNext: {
+		description: 'Replay: Play Next event',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
-	ReplayPlayPause: 'Replay: Resume or pause playback of replay input',
-	ReplayPlayPrevious: 'Replay: Play Previous event',
+	ReplayPlayPause: {
+		description: 'Replay: Resume or pause playback of replay input',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplayPlayPrevious: {
+		description: 'Replay: Play Previous event',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
-	ReplayPlaySelectedEvent: 'Replay: Play selected event (do NOT automatically transition to output)',
-	ReplayPlaySelectedEventToOutput: 'Replay: Play selected event (automatically transition to output)',
+	ReplayPlaySelectedEvent: {
+		description: 'Replay: Play selected event (do NOT automatically transition to output)',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+
+	ReplayPlaySelectedEventToOutput: {
+		description: 'Replay: Play selected event (automatically transition to output)',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
 	ReplayRecorded: 'Replay: Set in Recorded mode (non live)',
 
@@ -351,33 +474,153 @@ export default {
 		}
 	},
 
-	ReplaySelectEvents1: 'Replay: Select events category 1',
-	ReplaySelectEvents2: 'Replay: Select events category 2',
-	ReplaySelectEvents3: 'Replay: Select events category 3',
-	ReplaySelectEvents4: 'Replay: Select events category 4',
-	ReplaySelectEvents5: 'Replay: Select events category 5',
-	ReplaySelectEvents6: 'Replay: Select events category 6',
-	ReplaySelectEvents7: 'Replay: Select events category 7',
-	ReplaySelectEvents8: 'Replay: Select events category 8',
+	ReplaySelectEvents1: {
+		description: 'Replay: Select events category 1',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents2: {
+		description: 'Replay: Select events category 2',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents3: {
+		description: 'Replay: Select events category 3',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents4: {
+		description: 'Replay: Select events category 4',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents5: {
+		description: 'Replay: Select events category 5',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents6: {
+		description: 'Replay: Select events category 6',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents7: {
+		description: 'Replay: Select events category 7',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents8: {
+		description: 'Replay: Select events category 9',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
-	ReplaySelectEvents9: 'Replay: Select events category 9',
-	ReplaySelectEvents10: 'Replay: Select events category 10',
-	ReplaySelectEvents11: 'Replay: Select events category 11',
-	ReplaySelectEvents12: 'Replay: Select events category 12',
-	ReplaySelectEvents13: 'Replay: Select events category 13',
-	ReplaySelectEvents14: 'Replay: Select events category 14',
-	ReplaySelectEvents15: 'Replay: Select events category 15',
-	ReplaySelectEvents16: 'Replay: Select events category 16',
-	ReplaySelectEvents17: 'Replay: Select events category 17',
-	ReplaySelectEvents18: 'Replay: Select events category 18',
-	ReplaySelectEvents19: 'Replay: Select events category 19',
-	ReplaySelectEvents20: 'Replay: Select events category 20',
+	ReplaySelectEvents9: {
+		description: 'Replay: Select events category 9',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents10: {
+		description: 'Replay: Select events category 10',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents11: {
+		description: 'Replay: Select events category 11',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents12: {
+		description: 'Replay: Select events category 12',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents13: {
+		description: 'Replay: Select events category 13',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents14: {
+		description: 'Replay: Select events category 14',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents15: {
+		description: 'Replay: Select events category 15',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents16: {
+		description: 'Replay: Select events category 16',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents17: {
+		description: 'Replay: Select events category 17',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents18: {
+		description: 'Replay: Select events category 18',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents19: {
+		description: 'Replay: Select events category 19',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectEvents20: {
+		description: 'Replay: Select events category 20',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
-	ReplaySelectFirstEvent: 'Replay: Select first event (oldest - in top) of active list/category',
-	ReplaySelectLastEvent: 'Replay: Select Last event (newest - in bottom) of active list/category',
+	ReplaySelectFirstEvent: {
+		description: 'Replay: Select first event (oldest - in top) of active list/category',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectLastEvent: {
+		description: 'Replay: Select Last event (newest - in bottom) of active list/category',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
-	ReplaySelectNextEvent: 'Replay: Select next event in list (down)',
-	ReplaySelectPreviousEvent: 'Replay: Select previous event in list (up)',
+	ReplaySelectNextEvent: {
+		description: 'Replay: Select next event in list (down)',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySelectPreviousEvent: {
+		description: 'Replay: Select previous event in list (up)',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
 	ReplaySetAudioSource: {
 		description: 'Replay: Set audio source',
@@ -400,8 +643,18 @@ export default {
 	},
 
 
-	ReplaySetDirectionBackward: 'Replay: Set direction backwards - Reverse playback',
-	ReplaySetDirectionForward: 'Replay: Set direction backwards - Forward (normal) playback',
+	ReplaySetDirectionBackward: {
+		description: 'Replay: Set direction backwards - Reverse playback',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplaySetDirectionForward: {
+		description: 'Replay: Set direction backwards - Forward (normal) playback',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
 	ReplaySetLastEventText: {
 		description: 'Replay: Set text for last event',
@@ -491,7 +744,12 @@ export default {
 	ReplayStartRecording: 'Replay: Start recording of replay session',
 	ReplayStartStopRecording: 'Replay: Toggle start/stop recording replay',
 
-	ReplayStopEvents: 'Replay: Stop events playback',
+	ReplayStopEvents: {
+		description: 'Replay: Stop events playback on a replay channel',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
 	ReplayStopRecording: 'Replay: Stop recording of replay session',
 
@@ -515,11 +773,26 @@ export default {
 	ReplayToggleSelectedEventCamera7: 'Replay: Toggle Camera angle 7 for Selected event',
 	ReplayToggleSelectedEventCamera8: 'Replay: Toggle Camera angle 8 for Selected event',
 
-	ReplayUpdateSelectedInPoint: 'Replay: Update In point of Selected Event to current Position',
-	ReplayUpdateSelectedOutPoint: 'Replay: Update Mark Out point of Selected Event to current Position',
+	ReplayUpdateSelectedInPoint: {
+		description: 'Replay: Update In point of Selected Event to current Position on the given Channel',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
+	ReplayUpdateSelectedOutPoint: {
+		description: 'Replay: Update Mark Out point of Selected Event to current Position on the given Channel',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
 	// New in vMix 24
-	ReplayUpdateSelectedSpeed: 'Replay: Update Selected Event to use Current Speed.',
+	ReplayUpdateSelectedSpeed: {
+		description: 'Replay: Update Selected Event to use Current Speed.',
+		parameters: {
+			Channel: CHANNEL,
+		}
+	},
 
 	ReplayUpdateSelectedSpeedDefault: {
 		description: 'Update Selected Event to use Default Speed.',
