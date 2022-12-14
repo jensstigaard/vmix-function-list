@@ -3,6 +3,8 @@ export default {
 	AdjustCountdown: {
 		description: 'Seconds to add or subtract from current Countdown time',
 		parameters: {
+			Input: 'input',
+
 			Value: {
 				type: 'number',
 				description: 'Value in seconds - Enter negative number to subtract'
@@ -20,8 +22,7 @@ export default {
 				type: 'string',
 				optional: true,
 			},
-			// NOTE - vMix API documentation says 'SelectedName'
-			SelectName: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -50,8 +51,7 @@ export default {
 				type: 'string',
 				optional: true,
 			},
-			// NOTE - vMix API documentation says 'SelectedName', and not SelectName (which works though)
-			SelectName: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			}
@@ -171,7 +171,7 @@ export default {
 	},
 
 	SetText: {
-		description: 'Change Text in Title according to Value parameter. SelectedIndex or SelectName can be used to select image',
+		description: 'Change Text in Title according to Value parameter. SelectedIndex or SelectedName can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -202,7 +202,8 @@ export default {
 				optional: true,
 			},
 			// NOTE - vMix API documentation says 'SelectedName', but only SelectName works
-			SelectName: {
+			// SelectName: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
