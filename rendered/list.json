@@ -920,7 +920,13 @@
     "category": "Replay",
     "function": "ReplayChangeDirection",
     "description": "Switch replay direction - forward/reverse",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -931,6 +937,11 @@
       "Value": {
         "type": "number",
         "description": "Speed in percentage",
+        "optional": false
+      },
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
         "optional": false
       }
     },
@@ -966,28 +977,52 @@
     "category": "Replay",
     "function": "ReplayDeleteLastEvent",
     "description": "Delete last replay event",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayDeleteSelectedEvent",
     "description": "Delete selected replay event",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayDuplicateLastEvent",
     "description": "Duplicate last replay event",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayDuplicateSelectedEvent",
     "description": "Duplicate selected replay event",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -995,9 +1030,14 @@
     "function": "ReplayExportLastEvent",
     "description": "Export last replay event to specific folder",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "string",
-        "description": "Folder",
+        "description": "Replay clip export destination folder. I.e C:\\\\vMix Replay Exported Clips\\",
         "optional": false
       }
     },
@@ -1008,6 +1048,11 @@
     "function": "ReplayFastBackward",
     "description": "Replay fast backwards",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "number",
         "description": "Speed 1-30x",
@@ -1021,6 +1066,11 @@
     "function": "ReplayFastForward",
     "description": "Replay fast forward",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "number",
         "description": "Speed 1-30x",
@@ -1034,9 +1084,14 @@
     "function": "ReplayJumpFrames",
     "description": "Replay jump frames",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "number",
-        "description": "Frames",
+        "description": "Number of frames to jump",
         "optional": false
       }
     },
@@ -1072,7 +1127,13 @@
     "category": "Replay",
     "function": "ReplayJumpToNow",
     "description": "Replay jump to now",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -1177,6 +1238,19 @@
   },
   {
     "category": "Replay",
+    "function": "ReplayMarkInOutLiveFuture",
+    "description": "Number of seconds into the future to use when creating a new event.",
+    "parameters": {
+      "Value": {
+        "type": "number",
+        "description": "Seconds",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Replay",
     "function": "ReplayMarkInOutRecorded",
     "description": "Replay: Mark In/Out based on number of seconds back from current selected timestamp of recorded session",
     "parameters": {
@@ -1254,6 +1328,11 @@
     "function": "ReplayMoveSelectedInPoint",
     "description": "Replay: Move In-point for selected event",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "number",
         "description": "Number of frames relative. Negative number = previous in time. Positive number = Forward in time",
@@ -1267,6 +1346,11 @@
     "function": "ReplayMoveSelectedOutPoint",
     "description": "Replay: Move Out-point for selected event",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "number",
         "description": "Number of frames relative. Negative number = previous in time. Positive number = Forward in time",
@@ -1279,35 +1363,65 @@
     "category": "Replay",
     "function": "ReplayPause",
     "description": "Replay: Pause playback",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlay",
     "description": "Replay: Resume playback",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayAllEvents",
     "description": "Replay: Play all events in active list (do NOT automatically transition to output)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayAllEventsToOutput",
     "description": "Replay: Play all events in active list (automatically transition to output)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayBackward",
     "description": "Replay: Reverse playback of replay",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -1315,6 +1429,11 @@
     "function": "ReplayPlayEvent",
     "description": "Replay: Play Event by ID",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "number",
         "description": "Event number: 0-1000",
@@ -1328,6 +1447,11 @@
     "function": "ReplayPlayEventsByID",
     "description": "Replay: Play Events by ID (do NOT automatically transition to output)",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "string",
         "description": "List of Events each with number 0-1000",
@@ -1341,6 +1465,11 @@
     "function": "ReplayPlayEventsByIDToOutput",
     "description": "Replay: Play Events by ID (automatically transition to output)",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "string",
         "description": "List of Events each with number 0-1000",
@@ -1354,6 +1483,11 @@
     "function": "ReplayPlayEventToOutput",
     "description": "Replay: Play Event by ID",
     "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      },
       "Value": {
         "type": "number",
         "description": "Event number: 0-1000",
@@ -1366,56 +1500,104 @@
     "category": "Replay",
     "function": "ReplayPlayForward",
     "description": "Replay: Forward Playback of replay inputs",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayLastEvent",
     "description": "Replay: Playback of last event (do NOT automatically transition to output)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayLastEventToOutput",
     "description": "Replay: Playback of last event (automatically transition to output)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayNext",
     "description": "Replay: Play Next event",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayPause",
     "description": "Replay: Resume or pause playback of replay input",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlayPrevious",
     "description": "Replay: Play Previous event",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlaySelectedEvent",
     "description": "Replay: Play selected event (do NOT automatically transition to output)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayPlaySelectedEventToOutput",
     "description": "Replay: Play selected event (automatically transition to output)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -1496,168 +1678,312 @@
     "category": "Replay",
     "function": "ReplaySelectEvents1",
     "description": "Replay: Select events category 1",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents2",
     "description": "Replay: Select events category 2",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents3",
     "description": "Replay: Select events category 3",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents4",
     "description": "Replay: Select events category 4",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents5",
     "description": "Replay: Select events category 5",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents6",
     "description": "Replay: Select events category 6",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents7",
     "description": "Replay: Select events category 7",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents8",
-    "description": "Replay: Select events category 8",
-    "parameters": {},
+    "description": "Replay: Select events category 9",
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents9",
     "description": "Replay: Select events category 9",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents10",
     "description": "Replay: Select events category 10",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents11",
     "description": "Replay: Select events category 11",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents12",
     "description": "Replay: Select events category 12",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents13",
     "description": "Replay: Select events category 13",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents14",
     "description": "Replay: Select events category 14",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents15",
     "description": "Replay: Select events category 15",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents16",
     "description": "Replay: Select events category 16",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents17",
     "description": "Replay: Select events category 17",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents18",
     "description": "Replay: Select events category 18",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents19",
     "description": "Replay: Select events category 19",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectEvents20",
     "description": "Replay: Select events category 20",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectFirstEvent",
     "description": "Replay: Select first event (oldest - in top) of active list/category",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectLastEvent",
     "description": "Replay: Select Last event (newest - in bottom) of active list/category",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectNextEvent",
     "description": "Replay: Select next event in list (down)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySelectPreviousEvent",
     "description": "Replay: Select previous event in list (up)",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -1675,16 +2001,42 @@
   },
   {
     "category": "Replay",
+    "function": "ReplaySetChannelAToBTimecode",
+    "description": "Replay: Set A Timecode to B Timecode",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySetChannelBToATimecode",
+    "description": "Replay: Set B Timecode to A Timecode",
+    "parameters": {},
+    "examples": []
+  },
+  {
+    "category": "Replay",
     "function": "ReplaySetDirectionBackward",
     "description": "Replay: Set direction backwards - Reverse playback",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplaySetDirectionForward",
     "description": "Replay: Set direction backwards - Forward (normal) playback",
-    "parameters": {},
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -1766,6 +2118,29 @@
         "type": "number",
         "description": "Speed 0.0-1.0",
         "optional": false
+      },
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Replay",
+    "function": "ReplaySetTimecode",
+    "description": "Replay: Set position to Timecode",
+    "parameters": {
+      "Value": {
+        "type": "number",
+        "description": "Timecode in format yyyy-MM-ddTHH:mm:ss.fff",
+        "optional": false
+      },
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
       }
     },
     "examples": []
@@ -1794,8 +2169,14 @@
   {
     "category": "Replay",
     "function": "ReplayStopEvents",
-    "description": "Replay: Stop events playback",
-    "parameters": {},
+    "description": "Replay: Stop events playback on a replay channel",
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
@@ -1927,25 +2308,37 @@
   {
     "category": "Replay",
     "function": "ReplayUpdateSelectedInPoint",
-    "description": "Replay: Update In point of Selected Event to current Position",
-    "parameters": {},
+    "description": "Replay: Update In point of Selected Event to current Position on the given Channel",
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayUpdateSelectedOutPoint",
-    "description": "Replay: Update Mark Out point of Selected Event to current Position",
-    "parameters": {},
+    "description": "Replay: Update Mark Out point of Selected Event to current Position on the given Channel",
+    "parameters": {
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
+        "optional": false
+      }
+    },
     "examples": []
   },
   {
     "category": "Replay",
     "function": "ReplayUpdateSelectedSpeed",
-    "description": "Replay: Update speed of Selected Event",
+    "description": "Replay: Update Selected Event to use Current Speed.",
     "parameters": {
-      "Value": {
-        "type": "number",
-        "description": "Speed 0.0-1.0",
+      "Channel": {
+        "type": "string",
+        "description": "Valid values: Current, A or B",
         "optional": false
       }
     },
@@ -3552,7 +3945,7 @@
     "function": "SetDynamicInput1",
     "description": "Set Dynamic Input 1",
     "parameters": {
-      "Input": {
+      "Value": {
         "type": "input",
         "description": "",
         "optional": false
@@ -3565,7 +3958,7 @@
     "function": "SetDynamicInput2",
     "description": "Set Dynamic Input 2",
     "parameters": {
-      "Input": {
+      "Value": {
         "type": "input",
         "description": "",
         "optional": false
@@ -3578,7 +3971,7 @@
     "function": "SetDynamicInput3",
     "description": "Set Dynamic Input 3",
     "parameters": {
-      "Input": {
+      "Value": {
         "type": "input",
         "description": "",
         "optional": false
@@ -3591,7 +3984,7 @@
     "function": "SetDynamicInput4",
     "description": "Set Dynamic Input 4",
     "parameters": {
-      "Input": {
+      "Value": {
         "type": "input",
         "description": "",
         "optional": false
@@ -3945,6 +4338,11 @@
     "function": "AdjustCountdown",
     "description": "Seconds to add or subtract from current Countdown time",
     "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
       "Value": {
         "type": "number",
         "description": "Value in seconds - Enter negative number to subtract",
@@ -3968,7 +4366,7 @@
         "description": "",
         "optional": true
       },
-      "SelectName": {
+      "SelectedName": {
         "type": "string",
         "description": "",
         "optional": true
@@ -4009,7 +4407,7 @@
         "description": "",
         "optional": true
       },
-      "SelectName": {
+      "SelectedName": {
         "type": "string",
         "description": "",
         "optional": true
@@ -4192,7 +4590,7 @@
   {
     "category": "Title",
     "function": "SetText",
-    "description": "Change Text in Title according to Value parameter. SelectedIndex or SelectName can be used to select image",
+    "description": "Change Text in Title according to Value parameter. SelectedIndex or SelectedName can be used to select image",
     "parameters": {
       "Input": {
         "type": "input",
@@ -4232,7 +4630,7 @@
         "description": "",
         "optional": true
       },
-      "SelectName": {
+      "SelectedName": {
         "type": "string",
         "description": "",
         "optional": true
@@ -4337,6 +4735,34 @@
       "Value": {
         "type": "number",
         "description": "Speed between 0 to 1000",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Title",
+    "function": "SetColor",
+    "description": "Change Color in Title using HTML #xxxxxxxx format. SelectedIndex or SelectedValue can be used to select object.",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "SelectedIndex": {
+        "type": "number",
+        "description": "",
+        "optional": true
+      },
+      "SelectedValue": {
+        "type": "string",
+        "description": "",
+        "optional": true
+      },
+      "Value": {
+        "type": "string",
+        "description": "Color",
         "optional": false
       }
     },
@@ -4971,52 +5397,28 @@
     "category": "Transition",
     "function": "Transition1",
     "description": "Clicks the first Transition button in the main vMix window - transitions to what is in preview",
-    "parameters": {
-      "Input": {
-        "type": "input",
-        "description": "",
-        "optional": false
-      }
-    },
+    "parameters": {},
     "examples": []
   },
   {
     "category": "Transition",
     "function": "Transition2",
     "description": "Clicks the second Transition button in the main vMix window - transitions to what is in preview",
-    "parameters": {
-      "Input": {
-        "type": "input",
-        "description": "",
-        "optional": false
-      }
-    },
+    "parameters": {},
     "examples": []
   },
   {
     "category": "Transition",
     "function": "Transition3",
     "description": "Clicks the third Transition button in the main vMix window - transitions to what is in preview",
-    "parameters": {
-      "Input": {
-        "type": "input",
-        "description": "",
-        "optional": false
-      }
-    },
+    "parameters": {},
     "examples": []
   },
   {
     "category": "Transition",
     "function": "Transition4",
     "description": "Clicks the fourth Transition button in the main vMix window - transitions to what is in preview",
-    "parameters": {
-      "Input": {
-        "type": "input",
-        "description": "",
-        "optional": false
-      }
-    },
+    "parameters": {},
     "examples": []
   },
   {
