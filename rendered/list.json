@@ -3092,6 +3092,162 @@
   },
   {
     "category": "Input",
+    "function": "Effect1",
+    "description": "Toggle Effect 1 on/off",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect1Off",
+    "description": "Turn off Effect 1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect1On",
+    "description": "Turn on Effect 1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect2",
+    "description": "Toggle Effect 2 on/off",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect2Off",
+    "description": "Turn off Effect 2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect2On",
+    "description": "Turn on Effect 2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect3",
+    "description": "Toggle Effect 3 on/off",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect3Off",
+    "description": "Turn off Effect 3",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect3On",
+    "description": "Turn on Effect 3",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect4",
+    "description": "Toggle Effect 4 on/off",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect4Off",
+    "description": "Turn off Effect 4",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Effect4On",
+    "description": "Turn on Effect 4",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
     "function": "InputPreviewHide",
     "description": "Hides large preview of input",
     "parameters": {
@@ -3293,6 +3449,19 @@
     "category": "Input",
     "function": "LivePlayPause",
     "description": "Toggle Live/Pause of Input",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "Loop",
+    "description": "Toogle looping of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3762,6 +3931,24 @@
   },
   {
     "category": "Input",
+    "function": "SetCCGainY",
+    "description": "Change Gain Y level of Input",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Value between 0 and 2. 1 is original value",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
     "function": "SetCCGammaB",
     "description": "Change Gamma B level of Input",
     "parameters": {
@@ -3818,6 +4005,24 @@
     "category": "Input",
     "function": "SetCCGammaRGB",
     "description": "Change Gamma RGB level of Input",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Value between -1 and 1. 0 is original value",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetCCGammaY",
+    "description": "Change Gamma Y level of Input",
     "parameters": {
       "Input": {
         "type": "input",
@@ -3906,6 +4111,24 @@
   },
   {
     "category": "Input",
+    "function": "SetCCLiftY",
+    "description": "Change Lift Y level of Input",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Value between -1 and 1. 0 is original value",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
     "function": "SetCCLiftRGB",
     "description": "Change Lift RGB level of Input",
     "parameters": {
@@ -3935,6 +4158,96 @@
       "Value": {
         "type": "number",
         "description": "Value between -1 and 1. 0 is original value. -1 is greyscale. 1 is very saturated",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetCrop",
+    "description": "Change current Crop value of Input",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "Format: X1,Y1,X2,Y2",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetCropX1",
+    "description": "Change current Crop X1 value of Input.",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "0=No Crop, 1=Full Crop",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetCropX2",
+    "description": "Change current Crop X2 value of Input.",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "0=No Crop, 1=Full Crop",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetCropY1",
+    "description": "Change current Crop Y1 value of Input.",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "0=No Crop, 1=Full Crop",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetCropY2",
+    "description": "Change current Crop Y2 value of Input.",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "0=No Crop, 1=Full Crop",
         "optional": false
       }
     },
@@ -3994,6 +4307,96 @@
   },
   {
     "category": "Input",
+    "function": "SetEffect1Strength",
+    "description": "Set Input 1 Effect Strength",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Value between 0.0 to 1.0",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetEffect2Strength",
+    "description": "Set Input 2 Effect Strength",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Value between 0.0 to 1.0",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetEffect3Strength",
+    "description": "Set Input 3 Effect Strength",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Value between 0.0 to 1.0",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetEffect4Strength",
+    "description": "Set Input 4 Effect Strength",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Value between 0.0 to 1.0",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetFrameDelay",
+    "description": "Set the delay in framees",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Number of frames",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
     "function": "SetInputName",
     "description": "Set the Display Name of the Input",
     "parameters": {
@@ -4033,6 +4436,2346 @@
             "optional": false
           }
         ]
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer1Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer2Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer3Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer4Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer5Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer6Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer7Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer8Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer9Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10Crop",
+    "description": "Change current Crop value of Input Layer.\n   \n\t\tX1,Y1,X2,Y2\n\t\t\n\t\tValue = X1,Y2,X2,Y2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10CropX1",
+    "description": "Change current Crop X1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10CropX2",
+    "description": "Change current Crop X2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10CropY1",
+    "description": "Change current Crop Y1 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10CropY2",
+    "description": "Change current Crop Y2 value of Input Layer.\n   \n   1=No Crop, 0=Full Crop\n   \n   Value = Y2 0-1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10Height",
+    "description": "Change current Height value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10PanX",
+    "description": "Change current PanX value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10PanY",
+    "description": "Change current PanY value of Input Layer.\n   \n   0=centered, -2=100% to bottom, 2=100% to top\n   \n   Value = Pan -2-2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10Rectangle",
+    "description": "Change current Rectangle values of Input Layer in pixels.\n   \n\t\tX,Y,Width,Height\n\t\t\n\t\tValue = X,Y,Width,Height",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10Width",
+    "description": "Change current Width value of Input Layer.\n   \n   In pixels based on preset resolution\n   \n   Value = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10X",
+    "description": "Change current X value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10Y",
+    "description": "Change current Y value of Input Layer.\n   \n\t\tIn pixels based on preset resolution\n\t\t\n\t\tValue = Pixels -4096-4096",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Input",
+    "function": "SetLayer10Zoom",
+    "description": "Change current Zoom level of Input Layer.\n   \n\t\t1=100%, 0.5=50%, 2=200%\n\t\t\n\t\tValue = Zoom 0-5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "string",
+        "description": "",
+        "optional": false
       }
     },
     "examples": []
@@ -6647,6 +9390,294 @@
   },
   {
     "category": "Audio",
+    "function": "SetVolumeChannelMixer1",
+    "description": "Set Volume of an Input's sub channel 1",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer2",
+    "description": "Set Volume of an Input's sub channel 2",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer3",
+    "description": "Set Volume of an Input's sub channel 3",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer4",
+    "description": "Set Volume of an Input's sub channel 4",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer5",
+    "description": "Set Volume of an Input's sub channel 5",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer6",
+    "description": "Set Volume of an Input's sub channel 6",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer7",
+    "description": "Set Volume of an Input's sub channel 7",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer8",
+    "description": "Set Volume of an Input's sub channel 8",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer9",
+    "description": "Set Volume of an Input's sub channel 9",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer10",
+    "description": "Set Volume of an Input's sub channel 10",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer11",
+    "description": "Set Volume of an Input's sub channel 11",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer12",
+    "description": "Set Volume of an Input's sub channel 12",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer13",
+    "description": "Set Volume of an Input's sub channel 13",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer14",
+    "description": "Set Volume of an Input's sub channel 14",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer15",
+    "description": "Set Volume of an Input's sub channel 15",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
+    "function": "SetVolumeChannelMixer16",
+    "description": "Set Volume of an Input's sub channel 16",
+    "parameters": {
+      "Input": {
+        "type": "input",
+        "description": "",
+        "optional": false
+      },
+      "Value": {
+        "type": "number",
+        "description": "Volume between 0 to 100",
+        "optional": false
+      }
+    },
+    "examples": []
+  },
+  {
+    "category": "Audio",
     "function": "SetVolumeFade",
     "description": "Set volume gradually over x milliseconds",
     "parameters": {
@@ -6801,6 +9832,13 @@
         "optional": false
       }
     },
+    "examples": []
+  },
+  {
+    "category": "General",
+    "function": "Undo",
+    "description": "Undo closing Input.",
+    "parameters": {},
     "examples": []
   }
 ]

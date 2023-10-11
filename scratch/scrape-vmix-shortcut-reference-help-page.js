@@ -7,7 +7,7 @@ const xpath = require('xpath')
 
 const vMixFunctionList = require('../dist/index').default
 
-const VMIX_VERSION = 26
+const VMIX_VERSION = 27
 
 const existingFunctionList = new vMixFunctionList()
 
@@ -164,12 +164,17 @@ async function main() {
 
 	// Print details for new functions
 	Object.entries(newfunctionsByCategory)
-	.forEach(([category, functions]) => {
-		console.log('')
-		console.log('--', category, functions.length, '--')
-		functions.forEach(f => console.log(f.functionName, f.description, f.parameters))
-		console.log('')
-	})
+		.forEach(([category, functions]) => {
+			console.log('')
+			console.log('--', 'Category:', category, functions.length, '--')
+			functions.forEach(f => {
+				console.log(f.functionName)
+				console.log(f.description)
+				console.log('Params:', f.parameters)
+				console.log('')
+			})
+			console.log('')
+		})
 }
 
 main()

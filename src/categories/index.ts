@@ -4,7 +4,7 @@ import Audio from './02-audio/index'
 import Transition from './03-transition'
 import Output from './04-output'
 import Title from './05-title'
-import Input from './05-input'
+import Input from './05-input/index'
 import Overlay from './06-overlay'
 import Playlist from './07-playlist'
 import Scripting from './08-scripting'
@@ -19,19 +19,19 @@ import Browser from './14-browser'
 // Respecting the order of the vMix documentation
 // See https://www.vmix.com/help23/ShortcutFunctionReference.html
 export default {
-	General,
-	Audio,
-	Transition,
-	Output,
-	Title,
-	Input,
-	Overlay,
-	Playlist,
-	Scripting,
-	Replay,
-	NDI,
-	PTZ,
-	Preset,
-	DataSources,
-	Browser
+  General,
+  Audio,
+  Transition,
+  Output,
+  Title,
+  Input,
+  Overlay,
+  Playlist,
+  Scripting,
+  Replay,
+  NDI,
+  PTZ,
+  Preset,
+  DataSources,
+  Browser,
 }
