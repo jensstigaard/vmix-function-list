@@ -5,6 +5,9 @@
   "description": "Complete function list for vMix. All available functions to call to the vMix API.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">= 18.x"
+  },
   "scripts": {
     "build": "tsc",
     "build-render": "yarn build && yarn render",
