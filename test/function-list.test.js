@@ -6,7 +6,7 @@ const vMixFunctionList = require('../dist/index').default
 
 const functionList = new vMixFunctionList()
 
-const TOTAL_NUMBER_OF_FUNCTIONS = 678
+const TOTAL_NUMBER_OF_FUNCTIONS = 710
 
 describe('function-list', function () {
     it('should have a large number of functions in total', function () {
