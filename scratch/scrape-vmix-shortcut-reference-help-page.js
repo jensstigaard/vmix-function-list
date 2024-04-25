@@ -124,7 +124,7 @@ async function main() {
 				const previousParameters = _.difference(existingFuncParamsArr, func.parameters)
 				const newParameters = _.difference(func.parameters, existingFuncParamsArr)
 
-				// Check for SelectedIndex and SelectedValue being the missing parameters
+				// Check for SelectedIndex and SelectedValue/SelectedName being the missing parameters
 				if (!(
 					previousParameters.length === 2 &&
 					previousParameters.includes('SelectedIndex') &&
@@ -144,6 +144,8 @@ async function main() {
 					console.log(
 						'Function', func.functionName,
 						'in category', func.category,
+						'with description',
+						`"${func.description}"`,
 						'has parameters mismatch',
 						'Existing=', existingFuncParamsArr, 'Scraped=', func.parameters)
 				}
@@ -158,23 +160,30 @@ async function main() {
 		return
 	}
 
+	if (newFunctions.length === 0) {
+		console.log('No new functions found...')
+		return
+	}
+
 	console.log('Total number of new functions found:', newFunctions.length)
 
-	const newfunctionsByCategory = _.groupBy(newFunctions, 'category')
+	const newfunctionsByCategory = Object.entries(_.groupBy(newFunctions, 'category'))
+
+	console.log('')
+	console.log('--- New functions found ---')
 
 	// Print details for new functions
-	Object.entries(newfunctionsByCategory)
-		.forEach(([category, functions]) => {
-			console.log('')
-			console.log('--', 'Category:', category, functions.length, '--')
-			functions.forEach(f => {
-				console.log(f.functionName)
-				console.log(f.description)
-				console.log('Params:', f.parameters)
-				console.log('')
-			})
+	newfunctionsByCategory.forEach(([category, functions]) => {
+		console.log('')
+		console.log('--', 'Category:', category, functions.length, '--')
+		functions.forEach(f => {
+			console.log(f.functionName)
+			console.log(f.description)
+			console.log('Params:', f.parameters)
 			console.log('')
 		})
+		console.log('')
+	})
 }
 
 main()
