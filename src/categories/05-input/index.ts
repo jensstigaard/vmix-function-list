@@ -1,6 +1,6 @@
-import { Input } from '../../types/input'
-
 import SetCC from './set-cc'
+import Layers from './layers'
+import Zoom from './zoom'
 
 function SetLayerEntries() {
   const [start, end] = [1, 10]
@@ -358,45 +358,7 @@ export default {
     },
   },
 
-  // New in vMix 24
-  LayerOff: {
-    description: 'Turn off layer for input',
-    parameters: {
-      Input: {
-        type: 'input',
-      },
-      Value: {
-        type: 'number',
-        description: 'Layer number 1-10',
-      },
-    },
-  },
-
-  LayerOn: {
-    description: 'Turn on layer for input',
-    parameters: {
-      Input: {
-        type: 'input',
-      },
-      Value: {
-        type: 'number',
-        description: 'Layer number 1-10',
-      },
-    },
-  },
-
-  LayerOnOff: {
-    description: 'Toggle layer for input',
-    parameters: {
-      Input: {
-        type: 'input',
-      },
-      Value: {
-        type: 'number',
-        description: 'Layer number 1-10',
-      },
-    },
-  },
+  ...Layers,
 
   ListAdd: {
     description: 'Add Filename to List',
@@ -1048,6 +1010,8 @@ export default {
       },
     },
   },
+
+  ...Zoom,
 
   WaitForCompletion: {
     description: 'Wait for a Video Input to reach the end of playback',

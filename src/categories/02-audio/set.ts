@@ -1,3 +1,23 @@
+function SetVolumeBusMixerEntries() {
+  const busses = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'M']
+  const output: Record<string, any> = {}
+
+  for (const bus of busses) {
+    output[`SetVolumeBusMixer${bus}`] = {
+      description: `Set Volume of an Input's ${bus} Bus`,
+      parameters: {
+        Input: 'input',
+
+        Value: {
+          type: 'number',
+          description: 'Volume between 0 to 100',
+        },
+      },
+    }
+  }
+
+  return output
+}
 function SetVolumeChannelMixerEntries() {
   const [start, end] = [1, 16]
   const output: Record<string, any> = {}
@@ -164,6 +184,20 @@ export default {
       },
     },
   },
+
+  // Added in vMix version 27
+  SetVolumeBusMixer: {
+    description: "Set Volume of an Input's Bus Mixer (M,A,B,C,D,E,F,G)",
+    parameters: {
+      Input: 'input',
+      Value: {
+        type: 'string',
+        description: 'Bus,Volume 0-100',
+      },
+    },
+  },
+
+  ...SetVolumeBusMixerEntries(),
 
   SetVolumeChannel1: {
     description:

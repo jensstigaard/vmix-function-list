@@ -438,6 +438,17 @@ export default {
 
 	ReplayRecorded: 'Replay: Set in Recorded mode (non live)',
 
+	ReplayScrollSelectedEvent: {
+		description: 'Move back or forward through events list',
+		parameters: {
+			Value: {
+				type: 'number',
+				description: 'Count between -10 and 10',
+			},
+		}
+	
+	},
+
 	ReplaySelectAllEvents: 'Select all events in active channel.',
 
 	ReplaySelectChannelA: '',

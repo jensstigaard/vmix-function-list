@@ -102,7 +102,7 @@ export default {
 	},
 
 	SetImage: {
-		description: 'Change Image in Title according to Filename or empty to clear. SelectedIndex or SelectedValue can be used to select image',
+		description: 'Change Image in Title according to Filename or empty to clear. SelectedIndex or SelectedName can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -110,7 +110,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -123,7 +123,7 @@ export default {
 	},
 
 	SetImageVisible: {
-		description: 'Toggle Image Visibility in Title. SelectedIndex or SelectedValue can be used to select image',
+		description: 'Toggle Image Visibility in Title. SelectedIndex or SelectedName can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -131,7 +131,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -139,7 +139,7 @@ export default {
 	},
 
 	SetImageVisibleOff: {
-		description: 'Hide Image in Title. SelectedIndex or SelectedValue can be used to select image',
+		description: 'Hide Image in Title. SelectedIndex or SelectedName can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -147,7 +147,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -155,7 +155,7 @@ export default {
 	},
 
 	SetImageVisibleOn: {
-		description: 'Show Image in Title. SelectedIndex or SelectedValue can be used to select image',
+		description: 'Show Image in Title. SelectedIndex or SelectedName can be used to select image',
 		parameters: {
 			Input: 'input',
 
@@ -163,7 +163,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -224,7 +224,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -240,7 +240,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -256,7 +256,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -272,7 +272,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -286,7 +286,7 @@ export default {
 
 	// Added in version 26
 	SetColor: {
-		description: 'Change Color in Title using HTML #xxxxxxxx format. SelectedIndex or SelectedValue can be used to select object.',
+		description: 'Change Color in Title using HTML #xxxxxxxx format. SelectedIndex or SelectedName can be used to select object.',
 		parameters: {
 			Input: 'input',
 
@@ -294,7 +294,7 @@ export default {
 				type: 'number',
 				optional: true,
 			},
-			SelectedValue: {
+			SelectedName: {
 				type: 'string',
 				optional: true,
 			},
@@ -318,7 +318,7 @@ export default {
 			// 		type: 'number',
 			// 		optional: true,
 			// 	},
-			// 	SelectedValue: {
+			// 	SelectedName: {
 			// 		type: 'string',
 			// 		optional: true,
 			// 	},
@@ -335,7 +335,7 @@ export default {
 			// 	type: 'number',
 			// 	optional: true,
 			// },
-			// SelectedValue: {
+			// SelectedName: {
 			// 	type: 'string',
 			// 	optional: true,
 			// },
@@ -351,7 +351,7 @@ export default {
 			// 	type: 'number',
 			// 	optional: true,
 			// },
-			// SelectedValue: {
+			// SelectedName: {
 			// 	type: 'string',
 			// 	optional: true,
 			// },
